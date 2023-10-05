@@ -33,7 +33,7 @@ if (isset($_POST['Chambre'])) {
         try {
             $request->execute(array($numeroChambre,$prix,$imgName,$person,$capacite,$categorie,$etatChambre));
             // redirection vers list_room.php
-            header("Location: http://localhost/admin/chambre_list.php");
+            header("Location: http://localhost/projetGite/admin/chambre_list.php");
         } catch (PDOException $e) {
             echo $e->getMessage();
         }

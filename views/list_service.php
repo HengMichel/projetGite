@@ -1,4 +1,3 @@
-
 <?php
 include_once "./inc/header.php";
 include_once "./inc/nav.php";
@@ -8,42 +7,32 @@ $serviceList = Service::findAllTables();
 ?>
 
 <div class="container">
-    <!-- <table>
-    <thead>
+    <table>
+        <thead>
             <tr>
                 <th class="id_Annonce bg-secondary link-light" >Id Service</th>
-                <th class="Annonce_title bg-secondary link-light">Annonce title</th>
-                <th class="description bg-secondary link-light">Description</th>
-                <th class="postal_code bg-secondary link-light">Postal code</th>
-                <th class="city bg-secondary link-light">City</th>
-                <th class="Annonce_state bg-secondary link-light">Type</th>
-                <th class="price bg-secondary link-light">Price</th>
-                <th class="etat bg-secondary link-light">Etat</th>
-                
+                <th class="A bg-secondary link-light">Date de reservation :</th>
+                <th class="p bg-secondary link-light">Prix :</th>
+                <th class="ty bg-secondary link-light">Type</th>
             </tr>
         </thead>
-    </table> -->
+        <tbody>
+            <?php foreach($serviceList as $listService){ ?>
+                <tr>
+                    <td class="idAnnonce border-success-subtle border-3 mt-2"><?= $listService["id"]; ?></td>
+                    <td class="A border-success-subtle border-3 mt-2 text-uppercase"><?= $listService["date_reservation"]; ?></td>
+                    <td class="prix border-success-subtle border-3 mt-2"><?= $listService["prix"]; ?></td>
+                    <td class="type border-success-subtle border-3 mt-2"><?= $annonce["type"]; ?></td>
+                  
+                    <td><a class="btn btn-info bg-secondary border-success-subtle border-2 link-light"   
+                    href="./consulter_une_annonce.php?annonce=<?= $annonce["id"]; ?>">Consulter</a></td>
 
-    <form action="./model/db_booking.php" method="post">
-        <input type="text" name="id_chambre" value="<?= $_GET["chambre"]; ?>" hidden>
-        <input type="text" name="prix" value="<?= $_GET["prix"]; ?>" hidden>
-        <div class="form-group link-light">
-            <label>Date de début de la reservation :</label>
-            <input type="date" class="form-control border-success-subtle border-3 mt-3" name="date_debut_reservation" >
-        </div>
- 
-        <div class="form-group link-light mt-3">
-            <label>Date de fin de la réservation :</label>
-            <input type="date" class="form-control border-success-subtle border-3 mt-3" name="date_de_fin_reservation" >
-        </div>
-
-        <button type="submit"  class="btn btn-primary mt-5 mb-5 bg-secondary border-success-subtle border-2" name="service" value="submit">Submit</button>
-    </form>
+                    <!-- dois créer un fichier consulter_service qui affichera l'activité concerné avec photos et description -->                    
+                </tr>
+            <?php } ?>
+        </tbody>
+    </table>
 </div>
-
-
-
-
 <?php
 include_once "./inc/footer.php";
 ?>

@@ -1,90 +1,32 @@
 <?php
+session_start();
+
 include_once "./inc/header.php";
 include_once "./inc/nav.php";
-require_once "../models/joueurModel.php";
-require_once "../models/jeuModel.php";
-require_once "../models/matchModel.php";
-$serviceList = Service::findAllTables();
-$utilisateurList = Utilisateur::findAllUtilisateurs();
-$chambreList = Chambre::findAllChambres();
+// require_once "../models/joueurModel.php";
+// require_once "../models/jeuModel.php";
+// require_once "../models/matchModel.php";
+// $serviceList = Service::findAllTables();
+// $utilisateurList = Utilisateur::findAllUtilisateurs();
+// $chambreList = Chambre::findAllChambres();
 // $MatchsSortedByStartDateDesc = Contest::findAllMatchsSortedByStartDateDesc();
 ?>
-
-<div class="container mb-5">
-    <h2 class="m-5 link-warning">Liste des joueurs</h2>
-    <table class="table ">
-        <thead>
-            <tr>
-                <th class="link-warning bg-black">Id Joueur</th>
-                <th class="link-warning bg-black">Email</th>
-                <th class="link-warning bg-black">Nickname</th>
-            </tr>
-        </thead>
-        <tbody>
-            <?php foreach($joueurList as $joueur){ ?>
-                <tr>
-                    <td class="border-warning border-3 mt-2 link-warning bg-black"><?= $joueur['id_player']; ?></td>
-                    <td class="border-warning border-3 mt-2 link-warning bg-black"><?= $joueur['email']; ?></td>
-                    <td class="border-warning border-3 mt-2 link-primary bg-black"><?= $joueur['nickname']; ?></td>
-                </tr>
-            <?php } ?>
-        </tbody>
-    </table>
-</div>
-
-<div class="container mb-5">
-    <h2 class="m-5  link-warning bg-black">Liste des jeux</h2>
-    <table class="table">
-        <thead>
-            <tr>
-                <th class="border-warning border-3 mt-2 link-warning bg-black">Id Jeu</th>
-                <th class="border-warning border-3 mt-2 link-warning bg-black">Title</th>
-                <th class="border-warning border-3 mt-2 link-warning bg-black">Min joueur</th>
-                <th class="border-warning border-3 mt-2 link-warning bg-black">Max joueur</th>
-            </tr>
-        </thead>
-        <tbody>
-            <?php foreach($jeuList as $jeu){ ?>
-                <tr>
-                    <td class="border-warning border-3 mt-2 link-warning bg-black"><?= $jeu['id_game']; ?></td>
-                    <td class="border-warning border-3 mt-2 link-warning bg-black"><?= $jeu['title']; ?></td>
-                    <td class="border-warning border-3 mt-2 link-warning bg-black"><?= $jeu['min_players']; ?></td>
-                    <td class="border-warning border-3 mt-2 link-warning bg-black"><?= $jeu['max_players']; ?></td>
-                </tr>
-            <?php } ?>
-        </tbody>
-    </table>
-</div>
-
 <div class="container">
-    <h1 class="m-5 link-warning bg-black">Liste de match</h1>
-    <table class="table">
-        <thead>
-            <tr>
-                <th class="border-warning border-3 mt-2 link-warning bg-black">Nom du Jeu</th>
-                <th class="border-warning border-3 mt-2 link-warning bg-black">Nbr de joueurs enregistrés :</th>
-                <th class="border-warning border-3 mt-2 link-warning bg-black">Date de démarrage:</th>
-                <th class="border-warning border-3 mt-2 link-warning bg-black">Pseudonyme du gagnant du match :</th>
-            </tr>
-        </thead>
-        <tbody>
-            <?php foreach($matchList as $match){ ?>
-                <tr>
-                    <td class="border-warning border-3 mt-2 link-warning bg-black
-"><?= $match['title']; ?></td>
-                    <td class="border-warning border-3 mt-2 link-warning bg-black
-"><?= $match['nombre_de_joueurs']; ?></td>
-                    <td class="border-warning border-3 mt-2 link-warning bg-black
-"><?= $match['start_date']; ?></td>
-                    <td class="border-warning border-3 mt-2 link-info bg-black
-"><?= $match['nickname']; ?></td>
-                    <?php } ?>
-                </tr>
-        </tbody>
-    </table>
+    <!-- <form action="views/accueil.php" method="post"> -->
+        <div>
+            <h1>Bienvenue au gîte DAKOTE</h1>
+        </div>
+        <div class="descriptionDescriptif">
+            <h3>Descriptif</h3>
+            <p>Descriptif 2023, susceptible de modifications pour 2024, merci de vous référer à la fiche descriptive validée lors de la réservation.
+
+Vous aimez la mer, les sports nautiques, les belles randonnées et la nature préservée? Vous êtes au bon endroit! Le petit port touristique et animé de l'Aber Wrac'h est également réputé pour son centre nautique, les bateaux, ses magnifiques panoramas sur l'Aber et le phare de l'île Vierge, l'île Wrac'h, ... Les dunes Ste Marguerite sont également connues pour ses spots de kite-surf et de planche à voile, ses dunes sauvages, ses magnifiques randonnées, ses plages de sable blanc et eaux turquoises au pays des huîtres. Et c'est aussi le point de départ idéal pour visiter le Nord Finistère,
+
+Au Port de l'Aber Wrac'h, cette belle maison neuve en bois est confortable et lumineuse a été aménagée en 2 gîtes mitoyens avec terrasses closes privatives et d'un jardin bordé d'un petit ruisseau rafraîchissant. Au rez-de-chaussée, elle comprend une entrée, une cuisine ouverte sur le séjour salon lumineux avec ses grandes baies vitrées et accès à la terrasse bois, un wc. A l'étage, une grande chambre avec 1lit 2 personnes 160x200 et un lit banquette 90x190 (poss pers supp), une salle de bain avec baignoire équipée d'une douche et un meuble vasque. A disposition également une buanderie avec lave linge, sèche linge et abri pour vos vélos.</p>
+        </div>
+    <!-- </form> -->
 </div>
 
-</div>
 <?php
 include_once "../views/inc/footer.php";
 ?>

@@ -1,0 +1,13 @@
+
+body{
+    background-image: url('../img/background_gite.webp');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    height: 500px; 
+    width: 100%;
+    /* background-color: aqua; */
+}
+
+.descriptionDescriptif{
+    color: rgb(34, 180, 68);
+}

@@ -1,7 +1,7 @@
 <?php
-include_once "./inc/header.php";
-include_once "./inc/nav.php";
-require_once "../models/chambreModel.php";
+include_once "../inc/header.php";
+include_once "../inc/nav.php";
+require_once "./models/chambreModel.php";
 $chambreList = Chambre::findAllChambres();
 ?>
 

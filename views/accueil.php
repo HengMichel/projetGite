@@ -1,19 +1,13 @@
 <?php
 session_start();
-
 include_once "./inc/header.php";
 include_once "./inc/nav.php";
-// require_once "../models/joueurModel.php";
-// require_once "../models/jeuModel.php";
-// require_once "../models/matchModel.php";
-// $serviceList = Service::findAllTables();
-// $utilisateurList = Utilisateur::findAllUtilisateurs();
-// $chambreList = Chambre::findAllChambres();
-// $MatchsSortedByStartDateDesc = Contest::findAllMatchsSortedByStartDateDesc();
 ?>
+
 <div class="container">
+    
     <!-- <form action="views/accueil.php" method="post"> -->
-        <div>
+        <div class="bienvenue link-warning">
             <h1>Bienvenue au gîte DAKOTE</h1>
         </div>
         <div class="descriptionDescriptif">
@@ -24,6 +18,13 @@ Vous aimez la mer, les sports nautiques, les belles randonnées et la nature pr�
 
 Au Port de l'Aber Wrac'h, cette belle maison neuve en bois est confortable et lumineuse a été aménagée en 2 gîtes mitoyens avec terrasses closes privatives et d'un jardin bordé d'un petit ruisseau rafraîchissant. Au rez-de-chaussée, elle comprend une entrée, une cuisine ouverte sur le séjour salon lumineux avec ses grandes baies vitrées et accès à la terrasse bois, un wc. A l'étage, une grande chambre avec 1lit 2 personnes 160x200 et un lit banquette 90x190 (poss pers supp), une salle de bain avec baignoire équipée d'une douche et un meuble vasque. A disposition également une buanderie avec lave linge, sèche linge et abri pour vos vélos.</p>
         </div>
+         <div class="proprio">
+            <h4>Les propriétaires</h4>
+            <div class="photoProfile">
+                <p><span>Jacqueline et Lucien</span></p>
+                <img src="asset/img/les_proprio.jpg " alt="">
+            </div>
+         </div>
     <!-- </form> -->
 </div>
 

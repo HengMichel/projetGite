@@ -1,7 +1,7 @@
 <?php
-include_once "./inc/header.php";
-include_once "./inc/nav.php";
-require_once "../models/serviceModel.php";
+include_once "../inc/header.php";
+include_once "../inc/nav.php";
+require_once "./models/serviceModel.php";
 if (isset($_GET['id_match'])) {
     // identifiant de l'emprunt
     $id = $_GET['id_match'];

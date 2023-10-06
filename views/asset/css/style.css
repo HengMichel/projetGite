@@ -7,7 +7,130 @@ body{
     width: 100%;
     /* background-color: aqua; */
 }
+.container-fluid{
+    background-color: rgba(167, 166, 166, 0.625); /* Bleu clair avec une opacité de 0.7 */
+    font-weight: bolder;
 
+}
 .descriptionDescriptif{
-    color: rgb(34, 180, 68);
+    margin-top: 100px;
+    color: rgb(117, 8, 99);
+    background-color: rgba(219, 218, 218, 0.625); /* Bleu clair avec une opacité de 0.7 */
+}
+.descriptionDescriptif>p{
+    font-weight: bold;
+}
+.form-control{
+    background-color: rgba(167, 166, 166, 0.625); /* Bleu clair avec une opacité de 0.7 */
+
+}
+.btn{
+    background-color: rgba(167, 166, 166, 0.625); /* Bleu clair avec une opacité de 0.7 */
+
+}
+.proprio>h4{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: yellow;
+}
+.photoProfile>img{
+    width: 250px;
+    height: 250px;
+}
+span{
+    /* margin-top: 150px; */
+    font-size: 35px;
+    font-weight: bolder;
+    color: rgb(23, 88, 56);
+    background-color: rgba(167, 166, 166, 0.625); /* Bleu clair avec une opacité de 0.7 */
+
+}
+
+/* .restaurant, .background_custom{
+    background-image: none;
+} */
+.restaurant{
+    background-image: url("../img/restaurantBg.jpg");
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    height: 600px; 
+    width: 100%;
+}
+.service1{
+    margin-top: 50px;
+    font-size: 15px;
+    font-weight: bolder;
+    color: rgb(117, 8, 99);
+    
+}
+.service1>p{
+    text-align: center;
+    background-color: rgba(167, 166, 166, 0.25); /* Bleu clair avec une opacité de 0.7 */
+}
+.service1>h2{
+    text-align: center;
+    background-color: rgba(167, 166, 166, 0.25); /* Bleu clair avec une opacité de 0.7 */   
+}
+
+.petitDejeuner>h2{
+    margin: auto;
+    text-align: center;
+    text-decoration: double;
+    background-color: palevioletred;
+    color: white;
+}
+.petitDejeuner>img{
+    width: 472px;
+    height: 472px;
+}
+.petitDejeuner{
+    background-color: palevioletred;
+}
+.dejeuner{
+    background-color: palevioletred;
+}
+.dejeuner>h2{
+    padding-top: 20px;
+    text-align: center;
+    color: white;
+
+}
+.d-block>img{
+    width: 500px;
+    height: 500px;
+}
+.extreme{
+    background-image: url("../img/loisirBg.marelle.jpg");
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    height: 600px; 
+    width: 100%;
+}
+.extreme>h2{
+    padding-top: 30px;
+    padding-bottom: 20px;
+    text-align: center;
+    color: rgb(223, 28, 28);
+    font-weight: bolder;
+}
+
+.detente{
+    background-image: url("../img/loisirBgElico.jpg");
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    height: 1200px; 
+    width: 100%;
+}
+.detente>h2{
+    padding-top: 30px;
+    padding-bottom: 20px;
+    text-align: center;
+    color: rgb(221, 42, 197);
+    font-weight: bolder;
+}
+.detente>h3{
+    color: rgb(221, 42, 197);
+    text-align: center;
+    font-weight: bolder;
+
 }

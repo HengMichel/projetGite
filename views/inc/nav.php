@@ -25,7 +25,7 @@
                     <a class="nav-link link-warning" href="http://localhost/projetGite/views/connexion.php">Connexion</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link link-warning" href="http://localhost/projetGite/views/list_service.php">Service</a>
+                    <a class="nav-link link-warning" href="http://localhost/projetGite/views/service.php">Service</a>
                     </li>
                     <li class="nav-item">
                     </li>

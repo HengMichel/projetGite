@@ -1,8 +1,59 @@
-
 <?php
-require_once "../../models/utilisateurModel.php";
-require_once "../../models/chambreModel.php";
-require_once "../../models/serviceModel.php";
+session_start();
+
+require_once "../models/utilisateurModel.php";
+require_once "../models/chambreModel.php";
+require_once "../models/serviceModel.php";
+require_once "../models/database.php";
+
+
+if(isset($_POST["submit"])){
+    $email = htmlspecialchars($_POST["email"]);
+    $password = htmlspecialchars($_POST["password"]);
+
+    // etablir la connexion avec la bd
+    $db = Database::dbConnect();
+    // preparer la requete
+    $request = $db->prepare("SELECT * FROM users WHERE email = ?");
+    // executer la requete
+    try {
+        $request->execute(array($email));
+        // recuperer le resultat de la requete qui est toujours un objet
+        $userInfo = $request->fetch(PDO::FETCH_ASSOC);
+        // echo "<pre>";
+        // print_r($userInfo);
+        // echo "<pre>";
+        if(empty($userInfo)){
+            // definir la variable de session role
+            echo "utilisateur inconnu";
+        }else{
+            // verifier si le mdp est correct
+            if(password_verify($password,$userInfo["password"])){
+                // si l'utilisateur est un admin
+                if($userInfo["role"] == "admin"){
+                    // definir la variable de session role
+                    $_SESSION["role"] = $userInfo ["role"];
+                    // header("Location: https://autumn-drunk.000webhostapp.com/admin/admin.php");
+                    header("Location: http://localhost/projetGite/admin/admin.php");
+                }else{
+                    // definir la variable de session role
+                    $_SESSION["role"] = $userInfo ["role"];
+                    $_SESSION["id_user"] = $userInfo["id_user"];
+                    // header("Location: https://autumn-drunk.000webhostapp.com/user_home.php");
+                    header("Location: http://localhost/projetGite/user_home.php");
+                }
+            }else{
+                echo "Ahh tu as oublié ton mot de passe ?";
+            }
+        }
+    } catch (PDOException $e) {
+        $e->getMessage();
+    }
+
+}
+
+
+
 
 
 if (isset($_GET['id_chambre_delete'])) {
@@ -39,7 +90,7 @@ if (isset($_POST['Chambre'])) {
         }
 
 
-    // apeler la methode inscription de la classe User
+    // apeler la methode addChambre de la classe Chambre
     Chambre::addChambre($chambreId, $numeroChambre, $prix,$chambreImage,$capacite,$categorie,$etatChambre);
     // cette syntaxe uniquement pour appeler les méthodes static.
     // la méthode inscription étant static donc on utilise le nom de la classe suivi de "::" ensuite le nom de la méthode qui est inscriptions.

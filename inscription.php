@@ -1,10 +1,10 @@
 <?php 
 session_start();
-include_once "inc/header.php"; 
-include_once "./inc/nav.php";
+include_once "./views/inc/header.php"; 
+include_once "./views/inc/nav.php";
 ?>
 <div class="container">
-    <form action="views/inscription.php" method="post">
+    <form action="./models/inscription.php" method="post">
         <div class="form-group">
 
             <label class="mt-5 link-warning mb-3">Sexe :</label>
@@ -61,4 +61,4 @@ include_once "./inc/nav.php";
         <button type="submit" id="bouton" class="btn btn-primary mt-5 mb-5 border-primary-subtle border-3 mt-2" name="submit" value="submit">Submit</button>
     </form>
 </div>
-<?php include_once "inc/footer.php"; ?>
+<?php include_once "./views/inc/footer.php"; ?>

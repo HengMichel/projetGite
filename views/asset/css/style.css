@@ -46,9 +46,6 @@ span{
 
 }
 
-/* .restaurant, .background_custom{
-    background-image: none;
-} */
 .restaurant{
     background-image: url("../img/restaurantBg.jpg");
     background-size: cover; 
@@ -56,16 +53,27 @@ span{
     height: 600px; 
     width: 100%;
 }
+.restaurant>h1{
+    padding-top: 30px;
+    margin-left: 15px;
+}
 .service1{
     margin-top: 50px;
     font-size: 15px;
     font-weight: bolder;
     color: rgb(117, 8, 99);
-    
+    margin-left: 15px;
 }
 .service1>p{
+    
+    width: 200px;
+    background-color: darkgray;
+    margin-top: 50px;
     text-align: center;
-    background-color: rgba(167, 166, 166, 0.25); /* Bleu clair avec une opacité de 0.7 */
+    /* Bleu clair avec une opacité de 0.7 */
+    /* background-color: rgba(167, 166, 166, 0.25);  */
+    font-weight: bolder;
+
 }
 .service1>h2{
     text-align: center;
@@ -73,7 +81,8 @@ span{
 }
 
 .petitDejeuner>h2{
-    margin: auto;
+    margin-bottom: 25px;
+    padding-top: 25px;
     text-align: center;
     text-decoration: double;
     background-color: palevioletred;
@@ -86,11 +95,15 @@ span{
 .petitDejeuner{
     background-color: palevioletred;
 }
+.petitDejeuner>button,.btn{
+    margin-left: 730px
+}
 .dejeuner{
-    background-color: palevioletred;
+    background-color:  cadetblue;
 }
 .dejeuner>h2{
-    padding-top: 20px;
+    margin-bottom: 25px;
+    padding-top: 25px;
     text-align: center;
     color: white;
 
@@ -103,7 +116,7 @@ span{
     background-image: url("../img/loisirBg.marelle.jpg");
     background-size: cover; 
     background-repeat: no-repeat; 
-    height: 600px; 
+    height: 750px; 
     width: 100%;
 }
 .extreme>h2{
@@ -112,25 +125,52 @@ span{
     text-align: center;
     color: rgb(223, 28, 28);
     font-weight: bolder;
+    background-color: aliceblue
 }
 
-.detente{
+.douceur{
     background-image: url("../img/loisirBgElico.jpg");
     background-size: cover; 
     background-repeat: no-repeat; 
-    height: 1200px; 
+    height: 1100px; 
+    width: 100%;
+}
+.douceur>h2{
+    padding-top: 30px;
+    padding-bottom: 20px;
+    text-align: center;
+    color: rgb(221, 42, 197);
+    font-weight: bolder;
+    background: darkseagreen;
+}
+.douceur>h3{
+    color: darkseagreen;
+    text-align: center;
+    font-weight: bolder;
+    padding-bottom: 30px;
+    padding-top: 20px;
+    background: rgb(221, 42, 197);
+}
+.detente{
+    background-image: url("../img/soins_et_bien_etre.jpg");
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    height: 1100px; 
     width: 100%;
 }
 .detente>h2{
     padding-top: 30px;
     padding-bottom: 20px;
     text-align: center;
-    color: rgb(221, 42, 197);
+    color: white;
     font-weight: bolder;
+    background: gray;
 }
 .detente>h3{
-    color: rgb(221, 42, 197);
+    text-shadow: 0 0 black;
+    color: orange;
     text-align: center;
     font-weight: bolder;
-
+    padding-bottom: 30px;
+    padding-top: 20px;
 }

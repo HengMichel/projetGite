@@ -1,11 +1,11 @@
 <?php
 session_start();
- include_once "inc/header.php";
- require_once "inc/nav.php";
+ include_once "./views/inc/header.php";
+ require_once "./views/inc/nav.php";
   ?>
   
 <div class="container">
-    <form action="views/connexion.php" method="post">
+    <form action="./views/connexion.php" method="post">
         <div class="form-group link-warning">
             <label for="email">Email :</label>
             <input type="email" class="form-control border-success-subtle border-3 mt-3" id="email" name="email" >
@@ -19,4 +19,4 @@ session_start();
         <button type="submit" id="bouton" class="btn btn-success mt-5 mb-5 border-success-subtle border-2 link-warning" name="submit" value="submit">Valider</button>
     </form>
 </div>
-<?php include_once "inc/footer.php"; ?>
+<?php include_once "./views/inc/footer.php"; ?>

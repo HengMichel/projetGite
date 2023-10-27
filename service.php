@@ -209,12 +209,6 @@ include_once "./views/inc/nav.php";
 </div>
 
 
-
-    
-    
-
-
-
 <?php
 include_once "./views/inc/footer.php";
 ?>

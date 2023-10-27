@@ -1,6 +1,6 @@
 <?php
 
-require_once $_SERVER["DOCUMENT_ROOT"]."/gite_db/models/database.php";
+require_once $_SERVER["DOCUMENT_ROOT"]."/projetGite/models/database.php";
 
 class Utilisateur{
 
@@ -29,18 +29,14 @@ class Utilisateur{
 
     // methode pour tout afficher 
     public static function findAllUtilisateurs(){
-
         // on appel la fonction dbConnect qui est dans la class Database
         $db = Database::dbConnect();
-
         // preparation de la requête
         $request =$db->prepare("SELECT * FROM utilisateur");
-
         // exécuter la requête
         $utilisateurList = null;
         try {
             $request->execute();
-    
             // récupère le résultat dans un tableau
             $utilisateurList = $request->fetchAll(PDO::FETCH_ASSOC);
             
@@ -53,10 +49,8 @@ class Utilisateur{
 
     // methode pour tout afficher 
     public static function deleteUtilisateurById($id){
-        
         // on appel la fonction dbConnect qui est dans la class Database
         $db = Database::dbConnect();
-
         // preparation de la requête
         $request =$db->prepare(" DELETE FROM utilisateur WHERE id_utilisateur = ?");
 
@@ -93,6 +87,26 @@ class Utilisateur{
             $e->getMessage();
         }
     }
+
+
+    public static function  utilisateurReservationList($idUtilisateur){
+        //  se connecter a la db (database) ou bd (base de données)
+        $db = Database::dbConnect();
+        // preparer la requete
+        $request = $db->prepare("SELECT * FROM reservation WHERE utilisateur_id = ? AND reservation_etat = ?");
+        // executer la requete
+        $utilisateurReservationList = null;
+        try {
+            $request->execute(array($idUtilisateur,'en cours'));
+            // récuperer le resultat dans un tableau
+            $utilisateurReservationList = $request->fetchAll(PDO::FETCH_ASSOC);
+        } catch ( PDOException $e) {
+            echo $e->getMessage();
+        }
+        return $utilisateurReservationList;
+    }
+
+
 }
 
 

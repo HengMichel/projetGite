@@ -122,7 +122,7 @@ class Chambre
         //  se connecter a la db (database) ou bd (base de données)
         $db = Database::dbConnect();
         // preparer la requete
-        $request = $db->prepare("SELECT * FROM reservation WHERE utilisateur_id = ? AND etat_reservation = ?");
+        $request = $db->prepare("SELECT * FROM reservation WHERE utilisateur_id = ? AND reservation_etat = ?");
         // executer la requete
         $listReservation = null;
         try {

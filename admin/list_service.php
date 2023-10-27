@@ -1,8 +1,8 @@
 <?php
-include_once "../inc/header.php";
-include_once "../inc/nav.php";
-require_once "./models/serviceModel.php";
-require_once "./models/chambreModel.php";
+include_once "../views/inc/header.php";
+include_once "../views/inc/nav.php";
+require_once "../models/serviceModel.php";
+require_once "../models/chambreModel.php";
 $serviceList = Service::findAllTables();
 ?>
 

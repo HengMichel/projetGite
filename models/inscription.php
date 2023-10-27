@@ -1,5 +1,5 @@
 <?php 
-require_once "../views/inc/database.php";
+require_once "./database.php";
 if(isset($_POST["submit"])){
     // recuperer les infos saisies par le user
     $nom = htmlspecialchars($_POST["nom"]);
@@ -10,14 +10,13 @@ if(isset($_POST["submit"])){
     $adresse = htmlspecialchars($_POST["adresse"]);
     $numero_de_telephone = htmlspecialchars($_POST["numero_de_telephone"]);
     $sexe = htmlspecialchars($_POST["sexe"]);
-
     // crypter le mot de passe
-    $cryptedPassword = password_hash($password, PASSWORD_DEFAULT);
+    $cryptedPassword = password_hash($mdp, PASSWORD_DEFAULT);
 
     // etablir la connexion avec la bd
     $db = Database::dbConnect();
     // preparer la requete
-    $request = $db->prepare("INSERT INTO  utilisateur (`nom`, `prenom`, `email`, `mdp`, `statut`,'date_de_naissance', `adresse`, `numero_de_telephone`, `sexe`) VALUES (?,?,?,?,?,?,?,?)");
+    $request = $db->prepare("INSERT INTO  utilisateur (nom, prenom, email, mdp,date_de_naissance,adresse, numero_de_telephone, sexe) VALUES (?,?,?,?,?,?,?,?)");
     // executer la requete
     try {
         $request->execute(array($nom,$prenom,$email,$cryptedPassword,$date_de_naissance,$adresse ,$numero_de_telephone, $sexe));

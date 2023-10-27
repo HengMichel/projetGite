@@ -1,6 +1,4 @@
 <?php
-session_start();
-
 require_once "../models/utilisateurModel.php";
 require_once "../models/chambreModel.php";
 require_once "../models/serviceModel.php";
@@ -9,12 +7,12 @@ require_once "../models/database.php";
 
 if(isset($_POST["submit"])){
     $email = htmlspecialchars($_POST["email"]);
-    $password = htmlspecialchars($_POST["password"]);
+    $password = htmlspecialchars($_POST["mdp"]);
 
     // etablir la connexion avec la bd
     $db = Database::dbConnect();
     // preparer la requete
-    $request = $db->prepare("SELECT * FROM users WHERE email = ?");
+    $request = $db->prepare("SELECT * FROM utilisateur WHERE email = ?");
     // executer la requete
     try {
         $request->execute(array($email));
@@ -28,7 +26,7 @@ if(isset($_POST["submit"])){
             echo "utilisateur inconnu";
         }else{
             // verifier si le mdp est correct
-            if(password_verify($password,$userInfo["password"])){
+            if(password_verify($password,$userInfo["mdp"])){
                 // si l'utilisateur est un admin
                 if($userInfo["role"] == "admin"){
                     // definir la variable de session role
@@ -38,7 +36,7 @@ if(isset($_POST["submit"])){
                 }else{
                     // definir la variable de session role
                     $_SESSION["role"] = $userInfo ["role"];
-                    $_SESSION["id_user"] = $userInfo["id_user"];
+                    $_SESSION["id_utilisateur"] = $userInfo["id_utilisateur"];
                     // header("Location: https://autumn-drunk.000webhostapp.com/user_home.php");
                     header("Location: http://localhost/projetGite/user_home.php");
                 }
@@ -64,7 +62,7 @@ if (isset($_GET['id_chambre_delete'])) {
 }
 
 if (isset($_POST['Chambre'])) {
-    $numeroChambre = htmlspecialchars($_POST['title']);
+    $numeroChambre = htmlspecialchars($_POST['numero_chambre']);
     $prix = htmlspecialchars($_POST['prix']);
     $capacite = htmlspecialchars($_POST['capacite']);
     $categorie = htmlspecialchars($_POST['categorie']);
@@ -73,7 +71,7 @@ if (isset($_POST['Chambre'])) {
     $imgName = $_FILES["image"]["name"];
     $tmpName = $_FILES["image"]["tmp_name"];
 
-    $destination = $_SERVER["DOCUMENT_ROOT"]."/projetGite/assets/imgs/".$imgName;
+    $destination = $_SERVER["DOCUMENT_ROOT"]."/projetGite/asset/img/".$imgName;
 
     if(move_uploaded_file($tmpName,$destination)){
         //  se connecter a la bd
@@ -118,7 +116,6 @@ if (isset($_POST['add_utilisateur'])) {
 
 if (isset($_POST['add_service'])) {
     $date_reservation = htmlspecialchars($_POST['date_reservation']);
-    $start_date = htmlspecialchars($_POST['start_date']);
     $chambre_id = htmlspecialchars($_POST['chambre_id']);
     $prix_service = htmlspecialchars($_POST['prix_service']);
     $type = htmlspecialchars($_POST['type']);
@@ -131,10 +128,10 @@ if (isset($_POST['add_service'])) {
 }
 
 
-if (isset($_GET['idUtilisateur'])) {
+if (isset($_GET['id_utilisateur'])) {
 
     // identifiant de l'emprunter
-    $idUtilisateur = htmlspecialchars($_GET['idUtilisateur']);
+    $idUtilisateur = htmlspecialchars($_GET['id_utilisateur']);
 
     // apeler la methode returnBook de la classe Book 
     Utilisateur::deleteUtilisateurById($idUtilisateur);

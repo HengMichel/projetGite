@@ -7,28 +7,23 @@
             </button>
             <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarText">
                 <ul class="navbar-nav mb-2 mb-lg-0 link-warning ">
-                    <li class="nav-item">
-                    <a class="nav-link link-warning" href="http://localhost/projetGite/views/list_utilisateur.php">Liste des utilisateurs</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link active link-warning" aria-current="page" href="http://localhost/projetGite/admin/add_chambre.php">Ajouter une chambre</a>
-                    </li>
+                  
                     <li class="nav-item">
                     <a class="nav-link link-warning" href="http://localhost/projetGite/admin/list_chambre.php">Liste des chambres</a>
                     </li>
+
                     <li class="nav-item">
-                    <a class="nav-link link-warning" href="http://localhost/projetGite/inscription.php">Inscription</a>
+                    <a class="nav-link link-warning" href="http://localhost/projetGite/register.php">Inscription</a>
                     </li>
-                    <li class="nav-item">
-                    </li>
+                   
                     <li class="nav-item">
                     <a class="nav-link link-warning" href="http://localhost/projetGite/connexion.php">Connexion</a>
                     </li>
+
                     <li class="nav-item">
                     <a class="nav-link link-warning" href="http://localhost/projetGite/service.php">Service</a>
                     </li>
-                    <li class="nav-item">
-                    </li>
+                   
                 </ul>
             </div>
         </div>

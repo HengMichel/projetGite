@@ -1,11 +1,11 @@
 <?php
-session_start();
  include_once "./views/inc/header.php";
  require_once "./views/inc/nav.php";
+ require_once "./traitement/action.php";
   ?>
   
 <div class="container">
-    <form action="./views/connexion.php" method="post">
+    <form action="./page_utilisateur.php" method="post">
         <div class="form-group link-warning">
             <label for="email">Email :</label>
             <input type="email" class="form-control border-success-subtle border-3 mt-3" id="email" name="email" >

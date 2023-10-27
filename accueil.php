@@ -3,7 +3,7 @@ include_once "./views/inc/header.php";
 include_once "./views/inc/nav.php";
 require_once "./models/chambreModel.php";
 require_once "./traitement/action.php";
-$listChambre = chambreList();
+$listChambre = Chambre::chambreList();
 
 ?>
 
@@ -26,14 +26,14 @@ Au Port de l'Aber Wrac'h, cette belle maison neuve en bois est confortable et lu
             <?php foreach($listChambre as $chambre){ ?>
                 <div class="card border-success-subtle mb-5" style="width: 28rem;">
                     <div class="img_chambre">
-                        <img src="assets/imgs/<?= $chambre["chambre_images"] ?> " class="card-img-top img-fluid" alt="image">
+                        <img src="./views/asset/img/<?= $chambre["chambre_images"] ?> " class="card-img-top img-fluid" alt="image">
                     </div>
                     <div class="card-body">
                         <p class="card-text fa-2x"><?= $chambre["prix"]; ?>€/nuit</p>
                         <p class="card-text fa-bitcoin-sign fa-bitcoin-sign link-warning"><?= $chambre["categorie"]; ?></p>
                         <p class="card-text"><?= $chambre["capacite"]; ?> Capacité</p>
                         <a class="btn btn-info bg-secondary border-success-subtle border-2 link-light" 
-                        href="./booking.php?room=
+                        href="./reservation.php?room=
                         <?= $chambre["id_chambre"]; ?>&price=<?= $chambre['prix'] ?>">Réserver</a>
                     </div>
                 </div>
@@ -44,7 +44,7 @@ Au Port de l'Aber Wrac'h, cette belle maison neuve en bois est confortable et lu
            <h4>Les propriétaires</h4>
            <div class="photoProfile">
                <p><span>Jacqueline et Lucien</span></p>
-               <img src="asset/img/les_proprio.jpg " alt="">
+               <img src="./views/asset/img/les_proprio.jpg " alt="">
            </div>
         </div>
 

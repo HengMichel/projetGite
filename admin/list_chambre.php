@@ -1,7 +1,7 @@
 <?php
-include_once "../inc/header.php";
-include_once "../inc/nav.php";
-require_once "./models/chambreModel.php";
+include_once "../views/inc/header.php";
+include_once "../views/inc/nav.php";
+require_once "../models/chambreModel.php";
 $chambreList = Chambre::findAllChambres();
 ?>
 
@@ -29,7 +29,7 @@ $chambreList = Chambre::findAllChambres();
                     <td class="border-warning border-3 link-warning border-3 bg-black"><?= $chambre['etat_chambre']; ?></td>
 
                     <td class="border-warning border-3 link-warning border-3 bg-black">    
-                        <a class="border-warning border-3 link-danger" href="./traitement/action.php?id_chambre_delete=<?= $chambre['id_chambre']; ?>">Delete</a>
+                        <a class="border-warning border-3 link-danger" href="../traitement/action.php?id_chambre_delete=<?= $chambre['id_chambre']; ?>">Delete</a>
                     </td>
                 </tr>
             <?php } ?>

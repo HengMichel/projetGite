@@ -1,0 +1,23 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #edede9;
+
+    
+    /* background-image: url(../imgs/escalierRouge.avif); */
+    background-color: blanchedalmond;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+/* .collapse{
+    display: flex;
+    justify-content: flex-end;
+} */
+
+/* i{
+    font-size: 5em;
+} */
+ 

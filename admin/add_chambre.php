@@ -1,7 +1,7 @@
 <?php
 include_once "../views/inc/header.php";
 include_once "../views/inc/nav.php";
-require_once "../models/chambreModel.php";
+require_once "../traitement/action.php";
 
 if (isset($_GET['id_chambre'])) {
     // identifiant de l'emprunt
@@ -13,7 +13,7 @@ if (isset($_GET['id_chambre'])) {
 ?>
 
 <div class="container">
-    <form action="../../traitement/action.php" method="post" enctype="multipart/form-data">
+    <form action="../models/chambreModel.php" method="post" enctype="multipart/form-data">
         <div class="form-group list-group form-select-lg link-light">
             <h1 class="link-warning">Ajouter une chambre</h1>
             
@@ -47,7 +47,7 @@ if (isset($_GET['id_chambre'])) {
         </div>
 
         
-        <button type="submit" id="bouton" class="btn mt-5 mb-5 fw-semibold link-dark border-3 border-danger-subtle fw-bolder" name="add_room" value="submit">Enregistrer</button>
+        <button type="submit" id="bouton" class="btn mt-5 mb-5 fw-semibold link-dark border-3 border-danger-subtle fw-bolder" name="add_chambre" value="submit">Enregistrer</button>
     </form>
 </div>
 

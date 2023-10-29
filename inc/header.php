@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="http://localhost/projetGite/assets/css/style.css">
-    <title>header</title>
+
+    <title>Acceuil</title>
 </head>
 <body class="bgAllpage">
     <!-- ici la navbar -->
@@ -23,6 +25,10 @@
             </button>
             <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarText">
               <ul class="navbar-nav  mb-2 mb-lg-0">
+              <li class="nav-item">
+                  <a class="nav-link fw-bolder link-warning" href="http://localhost/projetGite/service.php">Service</a>
+                </li>
+
                 <li class="nav-item">
                   <!-- <a class="nav-link active form-check-inline fw-bolder" aria-current="page" 
                   href="https://autumn-drunk.000webhostapp.com/login.php">
@@ -32,16 +38,14 @@
                   Login</a>
                 </li>
                 <li class="nav-item">
-                  <!-- <a class="nav-link fw-bolder" href="https://autumn-drunk.000webhostapp.com/register.php">Sign-up</a> -->
-                  <a class="nav-link fw-bolder link-warning" href="http://localhost/projetGite/register.php">Sign-up</a>
+                  <a class="nav-link fw-bolder link-warning" href="http://localhost/projetGite/register.php">Register</a>
                 </li>
                 
-                
+                <!-- logout -->
                 <?php
-                // session_start();
                 if (isset($_SESSION['id_user'])) {
                     echo '<li class="nav-item">';
-                    echo '<a class="nav-link fw-bolder" href="logout.php">Déconnexion</a>';
+                    echo '<a class="nav-link fw-bolder" href="logout.php">Logout</a>';
                     echo '</li>';
                 }
                 ?>

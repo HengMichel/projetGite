@@ -23,7 +23,9 @@ if(isset($_POST["submit"])){
         $request->execute(array($lastName,$firstName,$email,$cryptedPassword,$birthday,$address,$phoneNumber, $gender));
     } catch (PDOException $e) {
         echo $e->getMessage();
-    }
+    } 
+    header("Location: http://localhost/projetGite/login.php");
+
 
 }
 ?>

@@ -1,64 +1,61 @@
 <?php 
 session_start();
-include_once "./views/inc/header.php"; 
-include_once "./views/inc/nav.php";
-?>
+include_once "inc/header.php"; ?>
 <div class="container">
-    <form action="./models/inscription.php" method="post">
-        <div class="form-group">
-
-            <label class="mt-5 link-warning mb-3">Sexe :</label>
+    <form action="model/inscription.php" method="post">
+        <div class="form-group mt-5 mb-5 d-flex">
+            <label class="me-xl-5 link-light">Gender :</label>
             <div class="form-check">
-                <input class="form-check-input border-primary-subtle border-3 mt-3 translate-middle-y " type="radio" name="sexe"  value="M">
-                <label class="form-check-label link-warning  lh-lg">Homme</label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input border-primary-subtle border-3 mt-3 translate-middle-y " type="radio" name="sexe"  value="F">
-                <label class="form-check-label link-warning  lh-lg">Femme</label>
+                <input class="form-check-input border-success-subtle border-3 mt-3 translate-middle-y " type="radio" name="gender"  value="M">
+                <label class="form-check-label link-light lh-lg">Male</label>
             </div>
             <div class="form-check">
-                <input class="form-check-input border-primary-subtle border-3 mt-3 translate-middle-y " type="radio" name="sexe" value="O">
-                <label class="form-check-label link-warning  lh-lg pb-5" >Autre</label>
+                <input class="form-check-input border-success-subtle border-3 mt-3 translate-middle-y  m-0 float-md-none" type="radio" name="gender"  value="F">
+                <label class="form-check-label link-light lh-lg">Female</label>
             </div>
-
-            <div class="form-group link-warning">
-                <label for="nom">Nom :</label>
-                <input type="text" class="form-control border-primary-subtle border-3 mt-3 w-50" id="nom" name="nom" >
+            <div class="form-check">
+                <input class="form-check-input border-success-subtle border-3 mt-3 translate-middle-y m-0 float-md-none" type="radio" name="gender" value="O">
+                <label class="form-check-label link-light lh-lg" >Other</label>
             </div>
-    
-            <div class="form-group link-warning mt-3">
-                <label for="prenom">Prénom :</label>
-                <input type="text" class="form-control border-primary-subtle border-3 mt-3 w-50" id="prenom" name="prenom" >
-            </div>
-
-            <div class="form-group link-warning mt-3">
-            <label>Date de naissance:</label>
-            <input type="date" class="form-control border-primary-subtle border-3 mt-3 link-primary w-25" name="date_de_naissance" >
-            </div>
-
-            <div class="form-group link-warning mt-3">
-            <label>Adresse :</label>
-            <input type="text" class="form-control border-primary-subtle border-3 mt-3 w-50" name="adresse" >
-            </div>
-
-            <div class="form-group link-warning mt-3">
-            <label>Numéro de téléphone :</label>
-            <input type="text" class="form-control border-primary-subtle border-3 mt-3 w-50" name="numero_de_telephone" >
-            </div>
-
-            <div class="form-group link-warning mt-3">
-            <label for="email">Email :</label>
-            <input type="email" class="form-control border-primary-subtle border-3 mt-3 w-50" id="email" name="email" >
-            </div>
-
-            <div class="form-group link-warning mt-3">
-            <label for="password">Mot de passe :</label>
-            <input type="password" class="form-control border-primary-subtle border-3 mt-3 w-50" id="mdp" name="mdp" >
-            </div>
-
         </div>
  
-        <button type="submit" id="bouton" class="btn btn-primary mt-5 mb-5 border-primary-subtle border-3 mt-2" name="submit" value="submit">Submit</button>
+        <div class="form-group link-light">
+            <label for="firstname">Firstname :</label>
+            <input type="text" class="form-control border-success-subtle border-3 mt-3" id="firstname" name="firstname" >
+        </div>
+ 
+        <div class="form-group link-light mt-3">
+            <label for="lastname link-light">Lastname :</label>
+            <input type="text" class="form-control border-success-subtle border-3 mt-3" id="lastname" name="lastname" >
+        </div>
+ 
+        <div class="form-group link-light mt-3">
+            <label for="email link-light">Email :</label>
+            <input type="email" class="form-control border-success-subtle border-3 mt-3" id="email" name="email" >
+        </div>
+ 
+        <div class="form-group link-light mt-3">
+            <label for="password link-light">Password :</label>
+            <input type="password" class="form-control border-success-subtle border-3 mt-3" id="password" name="password" >
+        </div>
+
+        <div class="form-group link-light mt-3">
+            <label>Address :</label>
+            <input type="text" class="form-control border-success-subtle border-3 mt-3" name="address" >
+        </div>
+        
+        <div class="form-group link-light mt-3">
+            <label>Phone number :</label>
+            <input type="text" class="form-control border-success-subtle border-3 mt-3" name="phone" >
+        </div>
+
+        <div class="form-group link-light mt-3">
+            <label>Birthday:</label>
+            <input type="date" class="form-control border-success-subtle border-3 mt-3" name="birthday" >
+        </div>
+    
+    
+        <button type="submit" id="bouton" class="btn btn-primary mt-5 mb-5 border-success-subtle border-3 mt-2 bg-secondary" name="submit" value="submit">Submit</button>
     </form>
 </div>
-<?php include_once "./views/inc/footer.php"; ?>
+<?php include_once "inc/footer.php"; ?>

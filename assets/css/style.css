@@ -12,12 +12,6 @@ body{
     background-attachment: fixed;
 
 }
-/* .collapse{
-    display: flex;
-    justify-content: flex-end;
-} */
-
-/* i{
-    font-size: 5em;
-} */
- 
+.bgAllpage{
+    background-image: url("../imgs/background_gite.webp");
+}

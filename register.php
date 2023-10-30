@@ -23,40 +23,40 @@ include_once "inc/header.php"; ?>
         <div class="row">
 
             <div class="form-group col-md-6">
-                <label class="firstname bg-dark fw-medium link-success" for="firstname">Firstname :</label>
-                <input type="text" class="form-control border-success border-4 mt-3" id="firstname" name="firstname" >
+                <label class="firstname bg-dark fw-medium link-warning" for="firstname">Firstname :</label>
+                <input type="text" class="form-control border-success border-4 mt-3 bg-success-subtle fw-medium" id="firstname" name="firstname" >
             </div>
      
             <div class="form-group col-md-6">
-                <label class="lastname link-success bg-dark fw-medium" for="lastname">Lastname :</label>
-                <input type="text" class="form-control border-success border-4 mt-3" id="lastname" name="lastname" >
+                <label class="lastname link-warning bg-dark fw-medium" for="lastname">Lastname :</label>
+                <input type="text" class="form-control border-success border-4 mt-3 bg-success-subtle fw-medium" id="lastname" name="lastname" >
             </div>
 
             <div class="form-group mt-3 col-md-6">
-                <label class="email link-success bg-dark fw-medium" for="email">Email :</label>
-                <input type="email" class="form-control border-success border-4 mt-3" id="email" name="email" >
+                <label class="email link-warning bg-dark fw-medium" for="email">Email :</label>
+                <input type="email" class="form-control border-success border-4 mt-3 bg-success-subtle fw-medium" id="email" name="email" >
             </div>
             <div class="form-group mt-3 col-md-6">
-                <label class="password link-success bg-dark fw-medium" for="password">Password :</label>
-                <input type="password" class="form-control border-success border-4 mt-3" id="password" name="password" >
+                <label class="password link-warning bg-dark fw-medium" for="password">Password :</label>
+                <input type="password" class="form-control border-success border-4 mt-3 bg-success-subtle fw-medium" id="password" name="password" >
             </div>
 
             <div class="form-group mt-3 col-md-6">
-                <label class="address link-success bg-dark fw-medium">Address :</label>
-                <input type="text" class="form-control border-success border-3 mt-3" name="address" >
+                <label class="address link-warning bg-dark fw-medium">Address :</label>
+                <input type="text" class="form-control border-success border-4 mt-3 bg-success-subtle fw-medium" name="address" >
             </div>
             <div class="form-group mt-3 col-md-6">
-                <label class="phoneN link-success bg-dark fw-medium" >Phone number :</label>
-                <input type="text" class="form-control border-success border-4 mt-3" name="phone" >
+                <label class="phoneN link-warning bg-dark fw-medium" >Phone number :</label>
+                <input type="text" class="form-control border-success border-4 mt-3 bg-success-subtle fw-medium" name="phone" >
             </div>
         </div>
  
         <div class="form-group mt-3 col-md-5 m-auto">
             <label class="birthday link-warning bg-dark fw-medium" >Birthday:</label>
-            <input type="date" class="form-control border-warning border-3 mt-3 fw-medium link-warning" name="birthday" >
+            <input type="date" class="form-control border-success border-4 mt-3 fw-medium link-dark bg-success-subtle fw-medium" name="birthday" >
         </div>
     
-        <button type="submit" id="bouton" class="btn mt-5 mb-5 border-warning border-3 mt-2 bg-dark link-warning" name="submit" value="submit">Submit</button>
+        <button type="submit" id="bouton" class="btn mt-5 mb-5 border-warning border-4 mt-2 bg-success link-warning" name="submit" value="submit">Submit</button>
     </form>
 </div>
 <?php include_once "inc/footer.php"; ?>

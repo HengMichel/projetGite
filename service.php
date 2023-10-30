@@ -6,18 +6,23 @@ include_once "inc/header.php";
     <h1>Les services</h1>
     <div class="service1">
         <h2 class="resto fa-4x">Restauration</h2>
-        <p>Notre restaurant Gastronomique vous accueille tous les jours de 6h30 à 11h00 pour le petit déjeuner. </p>
-        <p>Le déjeuner débute de 12h à 15h.</p>
-        <p>Tandis que le dîner vous invite à partir de 18h et s'achève à 00h00.</p>
-    </div>
+        <div class="card mt-5 m-3 w-25 border-warning border-3" style="width: 18rem;">
+          <div class="card-body bg-dark link-warning list-group-item lead">
+          <h5 class="card-title mt-2">Horaire</h5>
+          <p class="card-text">Notre restaurant Gastronomique vous accueille tous les jours de 6h30 à 11h00 pour le petit déjeuner.</p>
+          <p class="card-text">Le déjeuner débute de 12h à 15h.</p>
+          <p class="card-text">Tandis que le dîner vous invite à partir de 18h et s'achève à 00h00.</p>   
+          </div>
+        </div>
+    </div>       
 </div>
 
 <div class="petitDejeuner">
     <h2>Notre formule petit déjeuner à volonté au prix tous doux de 10€/jour</h2>
-    <img src="./assets/imgs/petit_dejeuner.jpg" alt="" class="img1 border border-success border-3">
-    <img src="./assets/imgs/petit_dejeuner2.jpg" alt="" class="img2 border border-info border-3">
-    <img src="./assets/imgs/petit_dejeuner3.jpg" alt="" class="img3 border border-primary border-3">
-    <img src="./assets/imgs/petit_dejeuner4.jpg" alt="" class="img4 border border-black border-3">
+    <img src="./assets/imgs/petit_dejeuner.jpg" alt="" class="img1 border border-success border-4">
+    <img src="./assets/imgs/petit_dejeuner2.jpg" alt="" class="img2 border border-info border-4">
+    <img src="./assets/imgs/petit_dejeuner3.jpg" alt="" class="img3 border border-primary border-4">
+    <img src="./assets/imgs/petit_dejeuner4.jpg" alt="" class="img4 border border-black border-4">
     <button type="submit" id="bouton" class="btn btn-primary border-warning-subtle border-3 bg-transparent my-5 rounded-5 progress-bar-striped w-25 fw-medium" name="reservation" value="submit">Je réserve</button>
 </div>
 <div class="dejeuner">
@@ -28,25 +33,25 @@ include_once "inc/header.php";
 
             <div class="carousel-inner ">
                 <div class="carousel-item active">
-                  <img src="./assets/imgs/restaurant1.webp" class="d-block w-75 m-auto border border-2 border-transparent" alt="...">
+                  <img src="./assets/imgs/restaurant1.webp" class="d-block w-75 m-auto border border-3 border-danger-subtle" alt="...">
                 </div>
                 <div class="carousel-item">
-                  <img src="./assets/imgs/restaurant2.jpg" class="d-block w-75 m-auto border border-2 border-warning" alt="...">
+                  <img src="./assets/imgs/restaurant2.jpg" class="d-block w-75 m-auto border border-3 border-warning" alt="...">
                 </div>
                 <div class="carousel-item">
-                  <img src="./assets/imgs/restaurant3.jpg" class="d-block w-75 m-auto border border-2 border-danger" alt="...">
+                  <img src="./assets/imgs/restaurant3.jpg" class="d-block w-75 m-auto border border-3 border-danger" alt="...">
                 </div>
                 <div class="carousel-item">
-                  <img src="./assets/imgs/restaurant4.webp" class="d-block w-75 m-auto border border-2 border-danger" alt="...">
+                  <img src="./assets/imgs/restaurant4.webp" class="d-block w-75 m-auto border border-3 border-danger" alt="...">
                 </div>
                 <div class="carousel-item">
                   <img src="./assets/imgs/restaurant5.webp" class="d-block w-75 m-auto border border-3 border-success-subtle" alt="...">
                 </div>
                 <div class="carousel-item">
-                  <img src="./assets/imgs/restaurant6.jpg" class="d-block w-75 m-auto border border-2 border-danger" alt="...">
+                  <img src="./assets/imgs/restaurant6.jpg" class="d-block w-75 m-auto border border-3 border-danger" alt="...">
                 </div>
                 <div class="carousel-item">
-                  <img src="./assets/imgs/restaurant7.jpg" class="d-block w-75 m-auto border border-2 border-danger" alt="...">
+                  <img src="./assets/imgs/restaurant7.jpg" class="d-block w-75 m-auto border border-3 border-danger" alt="...">
                 </div>
                 <div class="carousel-item">
                   <img src="./assets/imgs/restaurant8.jpg" class="d-block w-75 m-auto border border-3 border-danger-subtle" alt="...">
@@ -65,16 +70,16 @@ include_once "inc/header.php";
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon bg-transparent" aria-hidden="true"></span>
+              <span class="carousel-control-prev-icon bg-danger" aria-hidden="true"></span>
               <span class="visually-hidden">Précédent</span>
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-              <span class="carousel-control-next-icon bg-transparent" aria-hidden="true"></span>
+              <span class="carousel-control-next-icon bg-danger" aria-hidden="true"></span>
               <span class="visually-hidden">Suivant</span>
             </button>
         </div>
     </div>
-    <button type="submit" id="bouton" class="btn btn-primary border-success-subtle border-3 bg-transparent my-5 rounded-5 progress-bar-striped w-25 fw-medium initialism" name="reservation" value="submit">Je réserve</button>
+    <button type="submit" id="bouton" class="btn btn-primary border-danger-subtle border-3 bg-transparent my-5 rounded-5 progress-bar-striped w-25 fw-medium initialism" name="reservation" value="submit">Je réserve</button>
 </div>
 </div>
 

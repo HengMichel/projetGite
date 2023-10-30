@@ -4,7 +4,6 @@ require_once "../inc/database.php";
 if(isset($_POST["submit"])){
     $email = htmlspecialchars($_POST["email"]);
     $password = htmlspecialchars($_POST["password"]);
-
     // etablir la connexion avec la bd
     $db = dbConnexion();
     // preparer la requete

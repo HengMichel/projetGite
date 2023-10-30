@@ -19,11 +19,20 @@ if(isset($_POST["submit"])){
     // preparer la requete
     $request = $db->prepare("INSERT INTO users (`last_name`, `first_name`, `email`, `password`, `birthday`, `address`, `phone_number`, `gender`) VALUES (?,?,?,?,?,?,?,?)");
     // executer la requete
+
+
     try {
         $request->execute(array($lastName,$firstName,$email,$cryptedPassword,$birthday,$address,$phoneNumber, $gender));
     } catch (PDOException $e) {
         echo $e->getMessage();
     } 
+    // if ($request->execute(array($lastName, $firstName, $email, $cryptedPassword, $birthday, $address, $phoneNumber, $gender))) {
+
+    //     echo "Inscription réussie.";
+    // } else {
+    //     echo "Erreur lors de l'inscription.";
+    // }
+
     header("Location: http://localhost/projetGite/login.php");
 
 

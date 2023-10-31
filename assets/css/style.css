@@ -221,21 +221,17 @@ span{
         margin-left: auto;
     }
 }
-@media(max-width: 360px){
-
+@media(max-width: 375px){
     .navbar{
-      width: 100%;
-      height: 60px;
-    }
-    .navbar-toggler{
-      display: none;
+        height: 200px;
     }
     .navbar-nav{
       display: contents;
+      margin-top: 50px;
     }
     .nav-link{
       margin-right: 20px;
-      margin-top: 10px;
+      margin-top: 250px;
     }
     .container{
       width: 100%;
@@ -308,6 +304,124 @@ span{
     }
 
 }
+@media(max-width: 320px){
+    .navbar-brand{
+        margin-top: -10px;
+        margin-bottom: 5px;
+    }
+    .navbar{
+        width: 336px;
+        height: 60px;
+    }
+    .navbar-toggler{
+        display: none;
+    }
+    .navbar-nav{
+        display: contents;
+    }
+    .nav-link{
+        margin-right: 20px;
+        margin-top: 30px;
+    }
+    .container {
+        width: 100%;
+        margin-top: -20px;
+        margin-left: 2px;
+    }
+    .bgAllpage{
+        background-image: none;
+        background-color: black;
+    }
+    .restaurant{
+        height: 200px;
+        margin-top: 5px;
+    }
+    .resto{
+        font-size: 50px;
+    }
+    .service1> .card{
+        display: none;
+    }
+    .descriptionDescriptif{
+        margin-left: -11px;
+        margin-right: -6px;
+    }
+    .petitDejeuner>img{
+        width: 320px;
+        margin-left: 0px;
+    }
+    .dejeuner{
+        height: 222px;
 
+    }
+    .dejeuner>h2 {
+        margin-bottom: 80px;
+        height: 45px;
+        font-size: 20px;
+    }
+    .carousel-item>img{
+        height: auto;
+    }
+    .extreme>h2 {
+        height: 117px;
+        font-size: 20px;
+    }
+    .extreme{
+        height: auto;
+    }
+    .douceur>h2{
+        height: 65px;
+        font-size: 17px;
+        color: peru;
+        padding-top: 5px;
+    }
+    .douceur>h3 {
+        height: 65px;
+        font-size: 17px;
+        color: #bb027c;
+        margin-bottom: -15px;
+        padding-top: 0px;
+    }
+    .douceur{
+        height: auto;
+    }
+    .detente>h2{
+        height: 65px;
+        font-size: 17px;
+        color: orange;
+        padding-top: 5px;
+        margin-bottom: -18px;
+    }
+    .detente>h3 {
+        height: 65px;
+        font-size: 17px;
+        color: orange;
+        margin-bottom: -15px;
+        padding-top: 0px;
+    }
+    .detente{
+        height: auto;
+    }
+    .btn{
+        margin-left: auto;
+    }
+    .map{
+        margin-left: -12px;
+        margin-right: 10px;
+        width: 315px;
+    }
+    .card {
+        height: 320px;
+    }
+    .card-body{
+        width: 288px;
+        margin-left: -1px;
+        height: 120px;
+    }
+    .card-text{
+        margin-top: -5px;
+        margin-left: 0px;    
+    }
+}
 
 /*************** END MEDIAQUERY ***************/

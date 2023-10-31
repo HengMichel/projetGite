@@ -28,9 +28,9 @@ $price = 0;
                     <td class="booking_end_date border-success-subtle border-3 mt-2"><?= $book["booking_end_date"]; ?></td>
                     <td class="booking_state border-success-subtle border-3 mt-2"><?= $book["booking_state"]; ?></td>
                     <td class="booking_price border-success-subtle border-3 mt-2"><?= $book["booking_price"]; ?></td>
-                    <td class="btn btn-success-subtle m-3 border-warning border-3 mt-2">
+                    <td class="btn bg-success m-0 border-warning border-3 mt-2">
                         <!-- <a href="model/db_booking.php?id_book= -->
-                        <a href="http://localhost/model/db_booking.php?id_book=
+                        <a class="canc link-warning fw-medium" href="http://localhost/projetGite/model/db_booking.php?id_book=
                         <?=$book['id_booking']; ?>">Cancel</a></td>
                 </tr>
             <?php } ?>

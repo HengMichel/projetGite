@@ -22,35 +22,29 @@ if(isset($_POST["book"])){
 
     // si $today est > a la date de début de réservation ou $today est > à la date de fin de réservation
     if(strtotime($today)> strtotime($startDate) || strtotime($today)> strtotime($endtDate)){
-        echo '<script>alert("votre date de début ou de fin de réservation ne peut pas être inferieur à la date d aujourd hui")</script>';
-        echo '<script>window.location.href = "http://localhost/booking.php?room='.$idRoom.'&price='.$price.'";</script>';
+        echo '<script>alert("votre date de début ou de fin de réservation ne peut pas être inferieur à la date d aujourd hui")</script>'; 
+        echo '<script>window.location.href = "http://localhost/projetGite/booking.php?room='.$idRoom.'&price='.$price.'";</script>';  
 
     }else{
-
         // se connecter à la bd
         $db = dbConnexion();
-    
         // préparer la requête pour vérifier si la chambre est dispo entre la date de départ et la date de fin
         $request = $db->prepare("SELECT * FROM bookings WHERE room_id = ? AND ((booking_start_date <= ? AND booking_end_date >= ?) OR (booking_start_date <= ? AND booking_end_date >= ?))");
-    
         // executer la requete
         try {
             $request->execute(array($idRoom, $startDate,$startDate, $endDate, $endDate));
-    
             // recuperer le résultat
             $books = $request->fetch();
             if(empty($books)){
                 if($startDate<$endDate){
-    
                     //  preparer la requete pour reserver la chambre
                     $request = $db->prepare("INSERT INTO `bookings`(`booking_start_date`,`booking_end_date`,`user_id`, `room_id`, `booking_price`, `booking_state`) VALUES (?,?,?,?,?,?)");
-    
                     // executer la requete
                     try{
                         // $request->execute(array($startDate,$endDate,$_SESSION["id_user"],$idRoom,$price*$nbDays,'in progress'));
                         $request->execute(array($startDate, $endDate, $_SESSION['id_user'], $idRoom, $totalPrice, "in progress"));
 
-                        header("Location: http://localhost/user_home.php");
+                        header("Location: http://localhost/projetGite/user_home.php");
     
                     // Réservation réussie
                     echo "Réservation réussie!";
@@ -73,17 +67,15 @@ if(isset($_POST["book"])){
 }
 
 if(isset($_GET['id_book'])){
-
         // se connecter à la bd
         $db = dbConnexion();
-
         // préparer la requête pour annuler la réservation
         $request = $db->prepare("UPDATE bookings SET booking_state = ? WHERE id_booking = ?");
         // exécuter la requête
         try {
             $request->execute(array("cancel", $_GET['id_book']));
             // redirection vers user_home.php
-            header("Location: http://localhost/user_home.php");
+            header("Location: http://localhost/projetGite/user_home.php");
         } catch (PDOException $e) {
             echo $e->getMessage();
         }

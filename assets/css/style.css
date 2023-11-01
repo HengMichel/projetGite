@@ -172,7 +172,7 @@ span{
 }
 
 /*************** MEDIAQUERY ***************/
-@media(max-width: 768px){
+/* @media(max-width: 768px){
     .bgAllpage{
         background-image: none;
         background-color: black;
@@ -303,15 +303,14 @@ span{
         margin-left: auto;
     }
 
-}
-@media(max-width: 320px){
-    .navbar-brand{
-        margin-top: -10px;
-        margin-bottom: 5px;
+} */
+@media(max-width:320px){
+   
+    /* .collapse{
+        height: 200px;
     }
-    .navbar{
-        width: 336px;
-        height: 60px;
+    .navbar-brand.fw-bold.link-warning{
+        margin: auto;
     }
     .navbar-toggler{
         display: none;
@@ -328,10 +327,7 @@ span{
         margin-top: -20px;
         margin-left: 2px;
     }
-    .bgAllpage{
-        background-image: none;
-        background-color: black;
-    }
+    
     .restaurant{
         height: 200px;
         margin-top: 5px;
@@ -421,7 +417,7 @@ span{
     .card-text{
         margin-top: -5px;
         margin-left: 0px;    
-    }
+    } */
 }
 
 /*************** END MEDIAQUERY ***************/

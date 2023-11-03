@@ -13,7 +13,7 @@ session_start();
                 <input type="password" class="form-control border-success border-4 mt-3 bg-success-subtle fw-medium" id="password" name="password" >
             </div>
         </div>
-        <button type="submit" id="bouton" class="btn mt-5 mb-5 fw-bold bg-success border-warning border-4 link-warning" name="submit" value="submit">Submit</button>
+        <button type="submit" id="bouton" class="btn mt-5 mb-5 fw-bold bg-success border-warning border-4 link-warning m-auto" name="submit" value="submit">Submit</button>
     </form>
 </div>
 <?php include_once "inc/footer.php"; ?>

@@ -1,6 +1,7 @@
 <?php
 session_start();
-require_once $_SERVER["DOCUMENT_ROOT"]."/projetGite/inc/database.php";
+// require_once $_SERVER["DOCUMENT_ROOT"]."/projetGite/inc/database.php";
+require_once $_SERVER["DOCUMENT_ROOT"]."http://projetGite.com/inc/database.php";
 if(isset($_POST["book"])){
     // récuprer les infos
     $idRoom = htmlspecialchars($_POST["id_room"]);
@@ -23,7 +24,8 @@ if(isset($_POST["book"])){
     // si $today est > a la date de début de réservation ou $today est > à la date de fin de réservation
     if(strtotime($today)> strtotime($startDate) || strtotime($today)> strtotime($endtDate)){
         echo '<script>alert("votre date de début ou de fin de réservation ne peut pas être inferieur à la date d aujourd hui")</script>'; 
-        echo '<script>window.location.href = "http://localhost/projetGite/booking.php?room='.$idRoom.'&price='.$price.'";</script>';  
+        // echo '<script>window.location.href = "http://localhost/projetGite/booking.php?room='.$idRoom.'&price='.$price.'";</script>';  
+        echo '<script>window.location.href = "http://projetGite.com/booking.php?room='.$idRoom.'&price='.$price.'";</script>';  
 
     }else{
         // se connecter à la bd
@@ -44,7 +46,8 @@ if(isset($_POST["book"])){
                         // $request->execute(array($startDate,$endDate,$_SESSION["id_user"],$idRoom,$price*$nbDays,'in progress'));
                         $request->execute(array($startDate, $endDate, $_SESSION['id_user'], $idRoom, $totalPrice, "in progress"));
 
-                        header("Location: http://localhost/projetGite/user_home.php");
+                        // header("Location: http://localhost/projetGite/user_home.php");
+                        header("Location: http://projetGite.com/user_home.php");
     
                     // Réservation réussie
                     echo "Réservation réussie!";
@@ -75,7 +78,8 @@ if(isset($_GET['id_book'])){
         try {
             $request->execute(array("cancel", $_GET['id_book']));
             // redirection vers user_home.php
-            header("Location: http://localhost/projetGite/user_home.php");
+            // header("Location: http://localhost/projetGite/user_home.php");
+            header("Location: http://projetGite.com/user_home.php");
         } catch (PDOException $e) {
             echo $e->getMessage();
         }

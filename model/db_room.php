@@ -22,7 +22,8 @@ if(isset($_POST["add_room"])){
         try {
             $request->execute(array($roomNumber,$roomPrice,$imgName,$person,$category));
             // redirection vers list_room.php
-            header("Location: http://localhost/projetGite/admin/room_list.php");
+            // header("Location: http://localhost/projetGite/admin/room_list.php");
+            header("Location: http://projetGite.com/admin/room_list.php");
         } catch (PDOException $e) {
             echo $e->getMessage();
         }

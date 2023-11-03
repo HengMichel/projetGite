@@ -56,7 +56,7 @@ include_once "inc/header.php"; ?>
             <input type="date" class="form-control border-success border-4 mt-3 fw-medium link-dark bg-success-subtle fw-medium" name="birthday" >
         </div>
     
-        <button type="submit" id="bouton" class="btn mt-5 mb-5 border-warning border-4 mt-2 bg-success link-warning" name="submit" value="submit">Submit</button>
+        <button type="submit" id="bouton" class="btn mt-5 mb-5 border-warning border-4 mt-2 bg-success link-warning m-auto" name="submit" value="submit">Submit</button>
     </form>
 </div>
 <?php include_once "inc/footer.php"; ?>

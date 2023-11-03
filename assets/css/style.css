@@ -1,4 +1,3 @@
-
 .bgAllpage{
     background-image: url('../imgs/background_gite.webp');
     background-size: cover; 
@@ -36,7 +35,6 @@ span{
     color: rgb(232 62 197);
     background-color: rgba(167, 166, 166, 0.625);
 }
-
 .restaurant{
     background-image: url("../imgs/restaurantBg.jpg");
     background-size: cover; 
@@ -172,12 +170,13 @@ span{
 }
 
 /*************** MEDIAQUERY ***************/
-/* @media(max-width: 768px){
+@media(max-width: 768px){
     .bgAllpage{
         background-image: none;
         background-color: black;
     }
-    .card-body{
+    
+    /* .card-body{
         width: 312px;
         height: 180px;
       }
@@ -219,9 +218,9 @@ span{
     }
     .btn{
         margin-left: auto;
-    }
+    } */
 }
-@media(max-width: 375px){
+/* @media(max-width: 375px){
     .navbar{
         height: 200px;
     }
@@ -304,7 +303,7 @@ span{
     }
 
 } */
-@media(max-width:320px){
+/* @media(max-width:320px){ */
    
     /* .collapse{
         height: 200px;
@@ -418,6 +417,6 @@ span{
         margin-top: -5px;
         margin-left: 0px;    
     } */
-}
+/* } */
 
 /*************** END MEDIAQUERY ***************/

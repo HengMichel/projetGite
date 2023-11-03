@@ -6,5 +6,6 @@ session_start();
 session_destroy();
 
 // Redirigez l'utilisateur vers la page d acceuil
-header("Location: http://localhost/projetGite/index.php"); 
+// header("Location: http://localhost/projetGite/index.php"); 
+header("Location: http://projetGite.com/index.php"); 
 ?>

@@ -18,7 +18,7 @@ include_once "inc/header.php";
                 </div>
             </div>
         </div>
-        <button type="submit"  class="btn mt-5 mb-5 bg-success link-warning border-warning border-4 fw-medium" name="book" value="submit">Submit</button>
+        <button type="submit"  class="btn mt-5 mb-5 bg-success link-warning border-warning border-4 fw-medium m-auto" name="book" value="submit">Submit</button>
     </form>
 </div>
 <?php include_once "inc/footer.php"; ?>

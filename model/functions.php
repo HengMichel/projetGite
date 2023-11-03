@@ -1,6 +1,6 @@
 <?php
-require_once $_SERVER["DOCUMENT_ROOT"]."/projetGite/inc/database.php";
-// require_once "./inc/database.php";
+// require_once $_SERVER["DOCUMENT_ROOT"]."/projetGite/inc/database.php";
+require_once "./inc/database.php";
 
 function  roomList(){
     //  se connecter a la db (database) ou bd (base de données)

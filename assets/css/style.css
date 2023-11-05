@@ -55,6 +55,9 @@ span{
     font-weight: bolder;
     color: rgb(117, 8, 99);
 }
+.horaire{
+    margin-top: 165px;
+}
 .service1>p{
     background-color: rgba(0, 0, 0, 0.3); 
     text-align: center;
@@ -175,248 +178,86 @@ span{
         background-image: none;
         background-color: black;
     }
-    
-    /* .card-body{
-        width: 312px;
-        height: 180px;
-      }
-      .card-text{
-        width: 125px;
-      }
-    .collapse{
-        margin-top: -50px;
-    }
-    .gm-style-moc{
-        height: auto;
-    }
-    .navbar-toggler{
-      display: none;
-    }
     .navbar-nav{
-      display: contents;
+        display: contents;
     }
     .nav-link{
-      margin-right: 20px;
-      margin-top: 10px;
-    } 
-    .bienvenue>h1{
-      margin-bottom: -25px;
-      margin-top: -20px;
+        padding-bottom: 0px;
+        margin-right: 10px;
+        font-size: medium;
     }
-    .petitDejeuner>img{
-        width: 347px;
-        margin-left: 22px;
+    .service1>h2{
+        font-size: 50px;
     }
-    .extreme{
-        height: auto;
-    }
-    .douceur{
-        height: auto;
-    }
-    .detente{
-        height: auto;
-    }
-    .btn{
-        margin-left: auto;
-    } */
-}
-/* @media(max-width: 375px){
-    .navbar{
-        height: 200px;
-    }
-    .navbar-nav{
-      display: contents;
-      margin-top: 50px;
-    }
-    .nav-link{
-      margin-right: 20px;
-      margin-top: 250px;
-    }
-    .container{
-      width: 100%;
-      margin-top: 50px;
-    }
-    .bgAllpage{
-      background-image: none;
-      background-color: black;
-    }
-    .restaurant{
-      margin-top: 5px;
-    }
-    .card-body{
-      width: 320px;
-      height: 260px;
-    }
-    .petitDejeuner>img{
-        width: 347px;
-        margin-left: 0px;
-    }
-    .dejeuner>h2 {
-        height: 45px;
-        font-size: 20px;
-    }
-    .carousel-item>img{
-        height: auto;
-    }
-    .extreme>h2 {
-        height: 105px;
-        font-size: 20px;
-    }
-    .extreme{
-        height: auto;
-    }
-    .douceur>h2{
-        height: 65px;
-        font-size: 17px;
-        color: peru;
-        padding-top: 5px;
-    }
-    .douceur>h3 {
-        height: 65px;
-        font-size: 17px;
-        color: #bb027c;
-        margin-bottom: -15px;
-        padding-top: 0px;
-    }
-    .douceur{
-        height: auto;
-    }
-    .detente>h2{
-        height: 65px;
-        font-size: 17px;
-        color: orange;
-        padding-top: 5px;
-        margin-bottom: -18px;
-    }
-    .detente>h3 {
-        height: 65px;
-        font-size: 17px;
-        color: orange;
-        margin-bottom: -15px;
-        padding-top: 0px;
-    }
-    .detente{
-        height: auto;
-    }
-    .btn{
-        margin-left: auto;
-    }
+    .horaire{
+        margin-top: 65px;
+        width: 660px;
+        height: 210px;
 
-} */
-/* @media(max-width:320px){ */
-   
-    /* .collapse{
-        height: 200px;
     }
-    .navbar-brand.fw-bold.link-warning{
-        margin: auto;
+    .petitDejeuner>img{
+        margin-left: 20px;
+        height: 350px;
+        width: 350px;
     }
-    .navbar-toggler{
-        display: none;
+    
+    .petitDejeuner{
+        margin-bottom: -30px;
+    }
+    .extreme{
+        margin-bottom: -230px;
+    }
+    .douceur{
+        margin-bottom: -180px;        
+    }
+    .detente{
+        height: 480px;
+
+    }
+}
+@media(max-width: 320px){
+    .bgAllpage{
+        background-image: none;
+        background-color: black;
+    }
+    .collapse{
+        height: 30px;
     }
     .navbar-nav{
         display: contents;
     }
     .nav-link{
-        margin-right: 20px;
-        margin-top: 30px;
+        padding-bottom: 0px;
+        margin-right: 10px;
+        font-size: x-small;
     }
-    .container {
-        width: 100%;
-        margin-top: -20px;
-        margin-left: 2px;
-    }
-    
-    .restaurant{
-        height: 200px;
-        margin-top: 5px;
-    }
-    .resto{
+    .service1>h2{
         font-size: 50px;
     }
-    .service1> .card{
-        display: none;
-    }
-    .descriptionDescriptif{
-        margin-left: -11px;
-        margin-right: -6px;
+    .horaire{
+        width: 250px;
+        height: 265px;
+        font-size: x-small;
     }
     .petitDejeuner>img{
-        width: 320px;
-        margin-left: 0px;
+        margin-left: 10px;
+        height: 300px;
+        width: 300px;
     }
-    .dejeuner{
-        height: 222px;
-
-    }
-    .dejeuner>h2 {
-        margin-bottom: 80px;
-        height: 45px;
-        font-size: 20px;
-    }
-    .carousel-item>img{
-        height: auto;
-    }
-    .extreme>h2 {
-        height: 117px;
-        font-size: 20px;
+    .petitDejeuner{
+        margin-bottom: -30px;
     }
     .extreme{
-        height: auto;
-    }
-    .douceur>h2{
-        height: 65px;
-        font-size: 17px;
-        color: peru;
-        padding-top: 5px;
-    }
-    .douceur>h3 {
-        height: 65px;
-        font-size: 17px;
-        color: #bb027c;
-        margin-bottom: -15px;
-        padding-top: 0px;
+        margin-bottom: -330px;
     }
     .douceur{
-        height: auto;
-    }
-    .detente>h2{
-        height: 65px;
-        font-size: 17px;
-        color: orange;
-        padding-top: 5px;
-        margin-bottom: -18px;
-    }
-    .detente>h3 {
-        height: 65px;
-        font-size: 17px;
-        color: orange;
-        margin-bottom: -15px;
-        padding-top: 0px;
+        margin-bottom: -330px;        
     }
     .detente{
-        height: auto;
-    }
-    .btn{
-        margin-left: auto;
-    }
-    .map{
-        margin-left: -12px;
-        margin-right: 10px;
-        width: 315px;
-    }
-    .card {
-        height: 320px;
-    }
-    .card-body{
-        width: 288px;
-        margin-left: -1px;
-        height: 120px;
-    }
-    .card-text{
-        margin-top: -5px;
-        margin-left: 0px;    
-    } */
-/* } */
+        height: 380px;
 
+    }
+    }
+    
+   
 /*************** END MEDIAQUERY ***************/

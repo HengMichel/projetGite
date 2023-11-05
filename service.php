@@ -6,8 +6,8 @@ include_once "inc/header.php";
     <h1>Les services</h1>
     <div class="service1">
         <h2 class="resto fa-4x">Restauration</h2>
-        <div class="card mt-5 m-3 w-25 border-warning border-3" style="width: 18rem;">
-          <div class="card-body bg-dark link-warning list-group-item lead">
+        <!-- <div class="card mt-5 m-3 w-25 border-warning border-3" style="width: 18rem;"> -->
+          <div class="horaire card-body bg-dark link-warning border border-warning border-3 list-group-item lead">
           <h5 class="card-title mt-2 text-xl-center">Horaire</h5>
           <p class="card-text text-xl-center">Notre restaurant Gastronomique vous accueille tous les jours de 6h30 à 11h00 pour le petit déjeuner.</p>
           <p class="card-text text-xl-center">Le déjeuner débute de 12h à 15h.</p>

@@ -5,7 +5,10 @@
     height: 1500px; 
     width: 100%;
 }
-
+.fa-beat-fade {
+    /* Ajustez la durée d'animation selon vos préférences (1s = 1 seconde) */
+    animation-duration: 3s; 
+}
 .descriptionDescriptif{
     margin-top: 50px;
     color: rgb(117, 8, 99);

@@ -14,7 +14,6 @@ $listRoom = roomlist();
                 <th class="persons bg-success link-light">Persons</th>
                 <th class="category bg-success link-light">Category</th>
                 <th class="room_state bg-success link-light">Room State</th>
-                <!-- <th class="hotel_id bg-secondary link-light">Hôtel Id</th> -->
             </tr>
         </thead>
         <tbody>
@@ -26,7 +25,6 @@ $listRoom = roomlist();
                     <td class="personss border-success-subtle border-3 mt-2 bg-success-subtle fw-medium"><?= $room["persons"]; ?></td>
                     <td class="categoryy border-success-subtle border-3 mt-2 bg-success-subtle fa-bitcoin-sign fa-bitcoin-sign link-dark fw-bold"><?= $room["category"]; ?></td>
                     <td class="roomState border-success-subtle border-3 mt-2 bg-success-subtle fw-medium"><?= $room["room_state"]; ?></td>
-                    <!-- <td class="hotelId border-success-subtle border-3 mt-2"><?= $room["hotel_id"]; ?></td> -->
                 </tr>
             <?php } ?>
         </tbody>

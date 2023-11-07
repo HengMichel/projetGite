@@ -33,8 +33,8 @@ if(isset($_POST["submit"])){
     //     echo "Erreur lors de l'inscription.";
     // }
 
-    // header("Location: http://localhost/projetGite/login.php");
-    header("Location: http://projetGite.com/login.php");
+    header("Location: http://localhost/projetGite/login.php");
+    // header("Location: http://projetGite.com/login.php");
 
 
 }

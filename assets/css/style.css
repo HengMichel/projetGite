@@ -176,7 +176,35 @@ span{
 }
 
 /*************** MEDIAQUERY ***************/
+@media (max-width: 1400px) {
+    header {
+      background-color: black;
+    }
+    header h2 {
+      /* font-size: 14px; */
+    }
+  }
+  
+  @media (max-width: 960px) {
+    header {
+      background-color:black;
+    }
+    .logo1 {
+      display: none;
+    }
+    .logo2 {
+      display: inline;
+    }
+    header h2 {
+      font-family: "Roboto-Black";
+    }
+  }
+  
+
 @media(max-width: 768px){
+    .pied{
+        text-align: center;
+    }
     .bgAllpage{
         background-image: none;
         background-color: black;
@@ -219,6 +247,9 @@ span{
     }
 }
 @media(max-width: 320px){
+    .pied{
+        text-align: center;
+    }
     .bgAllpage{
         background-image: none;
         background-color: black;
@@ -238,8 +269,8 @@ span{
         font-size: 50px;
     }
     .horaire{
-        width: 250px;
-        height: 265px;
+        width: 100px;
+        height: 280px;
         font-size: x-small;
     }
     .petitDejeuner>img{

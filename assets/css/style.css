@@ -217,14 +217,24 @@ span{
         margin-right: 10px;
         font-size: medium;
     }
+    .restaurant{
+        width: 400px;
+    }
+    .restaurant>h1{
+        margin-left: 115px;
+        width: 0px;
+    }
     .service1>h2{
         font-size: 50px;
     }
+    /* modification apporte */
     .horaire{
-        margin-top: 65px;
-        width: 660px;
-        height: 210px;
-
+        text-align: center;
+        font-size: 15px;
+        margin-left: 133px;
+        margin-top: 165px;
+        width: 428px;
+        height: 180px;
     }
     .petitDejeuner>img{
         margin-left: 20px;
@@ -246,6 +256,11 @@ span{
 
     }
 }
+/* @media(max-width: 375px){
+    .horaire{
+        width: 250px;
+    }
+} */
 @media(max-width: 320px){
     .pied{
         text-align: center;
@@ -268,9 +283,11 @@ span{
     .service1>h2{
         font-size: 50px;
     }
+    /* modification apporte */
     .horaire{
-        width: 100px;
-        height: 280px;
+        margin-top: 150px;
+        width: 295px;
+        height: 202px;
         font-size: x-small;
     }
     .petitDejeuner>img{

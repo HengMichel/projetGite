@@ -2,7 +2,6 @@
 session_start();
 include_once "inc/header.php";
 ?>
-<div class="container">
   <div class="restaurant link-warning">
       <h1>Les services</h1>
       <div class="service1">
@@ -16,7 +15,6 @@ include_once "inc/header.php";
             </div>
           </div>
       </div>       
-  </div>
   
   <div class="petitDejeuner pb-5">
       <h2>Notre formule petit déjeuner à volonté au prix tous doux de 10€/jour</h2>

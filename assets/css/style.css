@@ -201,6 +201,20 @@ span{
   }
   
 
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
 @media(max-width: 768px){
     .pied{
         text-align: center;
@@ -218,30 +232,29 @@ span{
         font-size: medium;
     }
     .restaurant{
-        width: 400px;
+        margin: auto;
+        width: 750px;
     }
     .restaurant>h1{
-        margin-left: 115px;
-        width: 0px;
+        margin-left: 0px;
+        width: 750px;
     }
     .service1>h2{
         font-size: 50px;
     }
-    /* modification apporte */
     .horaire{
+        margin: auto;
         text-align: center;
-        font-size: 15px;
-        margin-left: 133px;
-        margin-top: 165px;
-        width: 428px;
-        height: 180px;
+        font-size: 17px;
+        margin-top: 180px;
+        width: 750px;
+        height: 165px;
     }
     .petitDejeuner>img{
-        margin-left: 20px;
+        margin-left: 15px;
         height: 350px;
         width: 350px;
     }
-    
     .petitDejeuner{
         margin-bottom: -30px;
     }
@@ -253,14 +266,8 @@ span{
     }
     .detente{
         height: 480px;
-
     }
 }
-/* @media(max-width: 375px){
-    .horaire{
-        width: 250px;
-    }
-} */
 @media(max-width: 320px){
     .pied{
         text-align: center;
@@ -268,9 +275,6 @@ span{
     .bgAllpage{
         background-image: none;
         background-color: black;
-    }
-    .collapse{
-        height: 30px;
     }
     .navbar-nav{
         display: contents;
@@ -283,32 +287,41 @@ span{
     .service1>h2{
         font-size: 50px;
     }
-    /* modification apporte */
     .horaire{
-        margin-top: 150px;
-        width: 295px;
-        height: 202px;
+        margin: auto;
+        width: 302px;
+        height: 200px;
         font-size: x-small;
     }
-    .petitDejeuner>img{
-        margin-left: 10px;
-        height: 300px;
-        width: 300px;
+    .restaurant{
+        height: auto;
+        width: 303px;
+    }
+    .restaurant>h1{
+        margin-left: -12px;
+        width: 315px;
     }
     .petitDejeuner{
-        margin-bottom: -30px;
+        width: 303px;
     }
+    .petitDejeuner>h2{
+        margin-bottom: 0px;
+    }
+    .petitDejeuner>img{
+        margin-left: 1px;
+        height: 300px;
+        width: 300px;
+    }    
     .extreme{
         margin-bottom: -330px;
     }
     .douceur{
-        margin-bottom: -330px;        
+        margin-bottom: -300px;        
     }
     .detente{
         height: 380px;
-
     }
-    }
+}
     
    
 /*************** END MEDIAQUERY ***************/

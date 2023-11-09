@@ -276,7 +276,6 @@ span{
     .restaurant>h1 {
         margin-left: 0px;
         width: 100%;
-
     }
     .horaire {
         font-size: 15px;
@@ -287,8 +286,7 @@ span{
         width: 100%;
     }
     .petitDejeuner>img {
-        height: 350px;
-        width: 463px;
+        width: 100%;
     }
     .dejeuner{
         background-color:  cadetblue;

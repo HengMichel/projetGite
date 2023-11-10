@@ -224,7 +224,7 @@ span{
     }
     .fa-beat-fade {
         /* Ajustez la durée d'animation selon vos préférences (1s = 1 seconde) */
-        animation-duration: 8s; 
+        animation-duration: 6s; 
     }
     .service1 {
         width: 100%;

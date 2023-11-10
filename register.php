@@ -1,7 +1,7 @@
 <?php 
 session_start();
 include_once "inc/header.php"; ?>
-<div class="container">
+<div class="container5 container">
     <form action="model/inscription.php" method="post">
 
         <div class="form-group mt-5 mb-5 d-flex">

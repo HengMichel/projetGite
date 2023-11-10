@@ -76,9 +76,10 @@ span{
     color: plum;
 }
 .petitDejeuner>img {
-    width: 49%;
+    width: 33%;
 }
 .petitDejeuner {
+    padding: 10px;
     background-color: rgba(0, 0, 0, 0.1);
 }
 .dejeuner{
@@ -147,15 +148,14 @@ span{
     padding-bottom: 30px;
     margin-bottom: 1px;
 }
-
+.pied{
+    text-align: center;
+}
 /*************** MEDIAQUERY ***************/
 
 @media(max-width: 768px){
     .p2bis{
         display: none;
-    }
-    .pied{
-        text-align: center;
     }
     .navbar-nav{
         display: contents;

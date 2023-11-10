@@ -21,7 +21,8 @@ include_once "inc/header.php";
     <img src="./assets/imgs/petit_dejeuner2.jpg" alt="" class="img2 border border-info border-4">
     <img src="./assets/imgs/petit_dejeuner3.jpg" alt="" class="img3 border border-primary border-4">
     <img src="./assets/imgs/petit_dejeuner4.jpg" alt="" class="img4 border border-black border-4">
-    <!-- <button type="submit" id="bouton" class="btn btn-primary border-warning-subtle border-3 bg-transparent my-5 rounded-5 progress-bar-striped w-25 fw-medium" name="reservation" value="submit">Je réserve</button> -->
+    <img src="./assets/imgs/petit_dejeuner5.jpg" alt="" class="img4 border border-warning border-4">
+    <img src="./assets/imgs/petit_dejeuner6.jpg" alt="" class="img4 border border-danger border-4">
   </div>
   <div class="dejeuner pb-5">
     <h2>Notre formule Gastronomique à volonté au prix tous doux de 30€/jour</h2>

@@ -156,6 +156,9 @@ span{
     text-align: center;
     padding-bottom: 10px;
 }
+.canc{
+    text-decoration: none;
+}
 /*************** MEDIAQUERY ***************/
 
 @media(max-width: 768px){

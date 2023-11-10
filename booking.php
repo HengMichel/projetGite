@@ -2,7 +2,7 @@
 session_start();
 include_once "inc/header.php"; 
 ?>
-<div class="container">
+<div class="container5 container">
     <form action="./model/db_booking.php" method="post">
         <div class="row">
             <div class="form-group link-warning fw-medium d-flex justify-content-md-center mt-5">

@@ -7,7 +7,8 @@ $listRoom = roomList();
 
 <div class="container d-flex flex-wrap justify-content-around">
     <?php foreach($listRoom as $room){ ?>
-        <div class="card border-warning border-4 mb-5 fa-beat-fade" style="width: 20rem;">
+        <!-- <div class="card border-warning border-4 mb-5 fa-beat-fade" style="width: 20rem;"> -->
+        <div class="card border-warning border-4 mb-5" style="width: 20rem;">
             <div class="img_room">
                 <img src="assets/imgs/<?= $room["room_imgs"] ?> " class="card-img-top img-fluid" alt="image">
             </div>

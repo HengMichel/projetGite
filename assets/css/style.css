@@ -4,6 +4,11 @@
     background-repeat: no-repeat; 
     width: 100%;
 }
+.container5 {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
 .fa-beat-fade {
     /* Ajustez la durée d'animation selon vos préférences (1s = 1 seconde) */
     animation-duration: 3s; 
@@ -51,7 +56,7 @@ span{
 .service1{
     font-size: 15px;
     font-weight: bolder;
-    color: rgb(117, 8, 99);
+    color: rgb(207, 35, 179);
 }
 .horaire{
     padding: 15px;
@@ -85,7 +90,6 @@ span{
 .dejeuner{
     background-color: rgba(0, 0, 0, 0.1);
     width: 100%;
-    padding: 15px;
 }
 .dejeuner>h2{
     color: plum;
@@ -98,13 +102,13 @@ span{
     background-repeat: no-repeat; 
     width: 100%;
 }
-.extreme>h2{
+.extreme>h2 {
     padding-top: 15px;
     padding-bottom: 15px;
     text-align: center;
-    color: rgb(167 2 2);
+    color: rgb(154 43 235);
     font-weight: bolder;
-    background-color: rgba(0, 0, 0, 0.1); 
+    background-color: rgba(0, 0, 0, 0.4);
     margin-bottom: 1px;
 }
 .douceur{
@@ -150,6 +154,7 @@ span{
 }
 .pied{
     text-align: center;
+    padding-bottom: 10px;
 }
 /*************** MEDIAQUERY ***************/
 
@@ -200,7 +205,6 @@ span{
         width: 100%;
     }
 }
-
 @media(max-width: 480px){
     .navbar-nav{
         display: contents;
@@ -220,7 +224,7 @@ span{
     }
     .fa-beat-fade {
         /* Ajustez la durée d'animation selon vos préférences (1s = 1 seconde) */
-        animation-duration: 10s; 
+        animation-duration: 8s; 
     }
     .service1 {
         width: 100%;
@@ -266,5 +270,4 @@ span{
         width: 100%;
     }
 }
-
 /*************** END MEDIAQUERY ***************/

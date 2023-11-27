@@ -22,7 +22,7 @@
         <ul class="navbar-nav  mb-2 mb-lg-0">
 
           <li class="nav-item">
-            <a class="nav-link fw-bolder link-warning" href="http://localhost/projetGite/aboutUs.php">About Us</a>
+            <a class="nav-link fw-bolder link-warning" href="http://localhost/projetGite/aboutUs.php">À propos de nous</a>
             <!-- <a class="nav-link fw-bolder link-warning" href="http://projetGite.com/aboutUs.php">About Us</a> -->
           </li>
           <li class="nav-item">
@@ -39,7 +39,7 @@
           }
           ?>
           <li class="nav-item">
-            <a class="nav-link fw-bolder link-warning" href="http://localhost/projetGite/service.php">Service</a>
+            <a class="nav-link fw-bolder link-warning" href="http://localhost/projetGite/service.php">Nos Services</a>
             <!-- <a class="nav-link fw-bolder link-warning" href="http://projetGite.com/service.php">Service</a> -->
           </li>
           <li class="nav-item">
@@ -48,13 +48,13 @@
             Login</a> -->
             <a class="nav-link active form-check-inline fw-bolder link-warning" aria-current="page" 
             href="http://localhost/projetGite/login.php">
-            Login</a>
+            Se connecter</a>
             <!-- <a class="nav-link active form-check-inline fw-bolder link-warning" aria-current="page" 
             href="http://projetGite.com/login.php">
             Login</a> -->
           </li>
           <li class="nav-item">
-            <a class="nav-link fw-bolder link-warning" href="http://localhost/projetGite/register.php">Sign up</a>
+            <a class="nav-link fw-bolder link-warning" href="http://localhost/projetGite/register.php">S'inscrire</a>
             <!-- <a class="nav-link fw-bolder link-warning" href="http://projetGite.com/register.php">Sign up</a> -->
           </li>
           <!-- logout for user and admin 2 in 1 -->

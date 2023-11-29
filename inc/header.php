@@ -18,7 +18,7 @@
       <!-- <a class="navbar-brand table-group-divider fw-bold" href="https://autumn-drunk.000webhostapp.com "> -->
       <a class="navbar-brand fw-bold link-warning" href="http://localhost/projetGite/index.php">Le Gîte DAKOTÉ</a>
       <!-- <a class="navbar-brand fw-bold link-warning" href="http://projetGite.com/index.php">Le Gîte DAKOTÉ</a> -->
-      <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarText">
+      <div class="navbar-collapse d-flex justify-content-end" id="navbarText">
         <ul class="navbar-nav  mb-2 mb-lg-0">
 
           <li class="nav-item">

@@ -43,9 +43,6 @@ span{
     color: rgb(232 62 197);
     background-color: rgba(167, 166, 166, 0.625);
 }
-.restaurant{
-    background-color:rgba(0, 0, 0, 0.3); 
-}
 .restaurant>h1{
     padding-left: 20px;
     /* 0.5 représente l'opacité (ajustez selon vos préférences) */
@@ -160,20 +157,16 @@ span{
     text-decoration: none;
 }
 /*************** MEDIAQUERY ***************/
-
-@media(max-width: 900px){
+@media(max-width: 1023px){
+    .navbar-nav{
+        display :-webkit-box;
+    }
     .p2bis{
         display: none;
-    }
-    .navbar-nav{
-        display: contents;
     }
     .nav-link{
         margin-right: 10px;
         font-size: medium;
-    }
-    .restaurant{
-        width: 100%;
     }
     .restaurant>h1{
         width: 100%;
@@ -233,14 +226,7 @@ span{
         width: 100%;
         font-size: 15px;
         font-weight: bolder;
-        color: rgb(117, 8, 99);
-    }
-    .restaurant {
-        background-image: url(../imgs/restaurantBg.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 190px;
-        width: 100%;
+        color: rgb(207, 35, 179);
     }
     .restaurant>h1 {
         width: 100%;
@@ -257,7 +243,6 @@ span{
     }
     .dejeuner{
         background-color: rgba(0, 0, 0, 0.1);
-        /* background-color:  cadetblue; */
         width: 100%;
     }
     .extreme{

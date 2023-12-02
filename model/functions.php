@@ -1,5 +1,5 @@
 <?php
-// require_once $_SERVER["DOCUMENT_ROOT"]."/projetGite/inc/database.php";
+// require_once $_SERVER["DOCUMENT_ROOT"]."/inc/database.php";
 require_once "./inc/database.php";
 
 function  roomList(){

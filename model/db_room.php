@@ -1,5 +1,5 @@
 <?php
-require_once "../inc/database.php";
+require_once "./inc/database.php";
 if(isset($_POST["add_room"])){
     // $hotel = htmlspecialchars($_POST["hotel"]);
     $roomNumber = htmlspecialchars($_POST["room_number"]);

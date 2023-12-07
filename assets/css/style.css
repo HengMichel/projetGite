@@ -156,6 +156,12 @@ span{
 .canc{
     text-decoration: none;
 }
+.container2{
+    justify-content: space-evenly;
+    display: flex;
+    flex-wrap: wrap;
+}
+
 /*************** MEDIAQUERY ***************/
 @media(max-width: 1023px){
     .navbar-nav{
@@ -257,6 +263,17 @@ span{
         background-color: rgba(0, 0, 0, 0.1);
         width: 100%;
     }
-    
+    .container2{
+        
+    }
 }
 /*************** END MEDIAQUERY ***************/
+
+
+
+
+
+
+
+
+

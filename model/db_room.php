@@ -11,7 +11,7 @@ if(isset($_POST["add_room"])){
     $imgName = $_FILES["image"]["name"];
     $tmpName = $_FILES["image"]["tmp_name"];
     
-    $destination = $_SERVER["DOCUMENT_ROOT"]."/projetGite/assets/imgs/".$imgName;
+    $destination = $_SERVER["DOCUMENT_ROOT"]."/projetGite/assets/imgs/chambres/".$imgName;
 
     if(move_uploaded_file($tmpName,$destination)){
         //  se connecter a la bd

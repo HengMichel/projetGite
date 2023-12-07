@@ -1,9 +1,10 @@
 <?php
-require_once(__DIR__ . '/../inc/database.php');
-
+// require_once(__DIR__ . '/../inc/database.php');
+require_once $_SERVER["DOCUMENT_ROOT"]."/projetGite/inc/database.php";
 function  roomList(){
     //  se connecter a la db (database) ou bd (base de données)
     $db = dbConnexion();
+
     // preparer la requete
     $request = $db->prepare("SELECT * FROM rooms");
     // executer la requete
@@ -34,3 +35,5 @@ function  userBookList($idUser){
     }
     return $userBookList;
 }
+
+

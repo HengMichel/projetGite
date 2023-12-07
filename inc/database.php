@@ -10,3 +10,16 @@ function dbConnexion(){
     return $connexion;
 }
 ?>
+
+<?php
+// function dbConnexion(){
+//     $connexion = null;
+//     try {
+//         $connexion = new PDO("mysql:host=localhost;dbname=gite_db","root","");
+//     } catch (PDOException $e) {
+        // Gérer l'erreur de connexion
+//         die('Connexion échouée : ' . $e->getMessage());
+//     }
+//     return $connexion;
+// }
+?>

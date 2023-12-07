@@ -2,15 +2,15 @@
 session_start();
 include_once "./inc/header.php"; 
 require_once "./model/functions.php";
-$listRoom = roomlist();
+$listRoom = roomList();
 ?>
 
 <div class="container d-flex flex-wrap justify-content-around">
     <?php foreach($listRoom as $room){ ?>
         <!-- fa-beat-fade -->
-        <div class="card border-warning border-4 mb-5 " style="width: 20rem;">
+        <div class="card border-warning border-4 mb-5 " style="width: 18rem;">
             <div class="img_room">
-                <img src="assets/imgs/<?= $room["room_imgs"] ?> " class="card-img-top img-fluid" alt="image">
+                <img src="assets/imgs/chambres/<?= $room["room_imgs"] ?> " class="card-img-top img-fluid" alt="image">
             </div>
             <div class="card-body bg-success">
                 <p class="card-text fa-2x fw-medium"><?= $room["price"]; ?>€/nuit</p>

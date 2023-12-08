@@ -15,15 +15,12 @@
   <!-- ici la navbar -->
   <nav class="navbar navbar-expand-lg mb-5 bg-dark">
     <div class="container-fluid ">
-      <!-- <a class="navbar-brand table-group-divider fw-bold" href="https://autumn-drunk.000webhostapp.com "> -->
       <a class="navbar-brand fw-bold link-warning" href="http://localhost/projetGite/index.php">Le Gîte DAKOTÉ</a>
-      <!-- <a class="navbar-brand fw-bold link-warning" href="http://projetGite.com/index.php">Le Gîte DAKOTÉ</a> -->
       <div class="navbar-collapse d-flex justify-content-end" id="navbarText">
         <ul class="navbar-nav  mb-2 mb-lg-0">
 
           <li class="nav-item">
             <a class="nav-link fw-bolder link-warning" href="http://localhost/projetGite/aboutUs.php">À propos de nous</a>
-            <!-- <a class="nav-link fw-bolder link-warning" href="http://projetGite.com/aboutUs.php">About Us</a> -->
           </li>
           <li class="nav-item">
 
@@ -40,22 +37,14 @@
           ?>
           <li class="nav-item">
             <a class="nav-link fw-bolder link-warning" href="http://localhost/projetGite/service.php">Nos Services</a>
-            <!-- <a class="nav-link fw-bolder link-warning" href="http://projetGite.com/service.php">Service</a> -->
           </li>
           <li class="nav-item">
-            <!-- <a class="nav-link active form-check-inline fw-bolder" aria-current="page" 
-            href="https://autumn-drunk.000webhostapp.com/login.php">
-            Login</a> -->
             <a class="nav-link active form-check-inline fw-bolder link-warning" aria-current="page" 
             href="http://localhost/projetGite/login.php">
             Se connecter</a>
-            <!-- <a class="nav-link active form-check-inline fw-bolder link-warning" aria-current="page" 
-            href="http://projetGite.com/login.php">
-            Login</a> -->
           </li>
           <li class="nav-item">
             <a class="nav-link fw-bolder link-warning" href="http://localhost/projetGite/register.php">S'inscrire</a>
-            <!-- <a class="nav-link fw-bolder link-warning" href="http://projetGite.com/register.php">Sign up</a> -->
           </li>
           <!-- logout for user and admin 2 in 1 -->
           <?php

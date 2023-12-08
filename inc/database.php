@@ -10,7 +10,6 @@ function dbConnexion(){
     return $connexion;
 }
 ?>
-
 <?php
 // function dbConnexion(){
 //     $connexion = null;

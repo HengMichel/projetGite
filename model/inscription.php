@@ -1,6 +1,7 @@
 <?php 
 require_once "../inc/database.php";
 if(isset($_POST["submit"])){
+
     // recuperer les infos saisies par le user
     $lastName = htmlspecialchars($_POST["lastname"]);
     $firstName = htmlspecialchars($_POST["firstname"]);
@@ -16,26 +17,16 @@ if(isset($_POST["submit"])){
 
     // etablir la connexion avec la bd
     $db = dbConnexion();
+
     // preparer la requete
     $request = $db->prepare("INSERT INTO users (`last_name`, `first_name`, `email`, `password`, `birthday`, `address`, `phone_number`, `gender`) VALUES (?,?,?,?,?,?,?,?)");
+
     // executer la requete
-
-
     try {
         $request->execute(array($lastName,$firstName,$email,$cryptedPassword,$birthday,$address,$phoneNumber, $gender));
     } catch (PDOException $e) {
         echo $e->getMessage();
     } 
-    // if ($request->execute(array($lastName, $firstName, $email, $cryptedPassword, $birthday, $address, $phoneNumber, $gender))) {
-
-    //     echo "Inscription réussie.";
-    // } else {
-    //     echo "Erreur lors de l'inscription.";
-    // }
-
     header("Location: http://localhost/projetGite/login.php");
-    // header("Location: http://projetGite.com/login.php");
-
-
 }
 ?>

@@ -13,14 +13,15 @@ if (isset($_POST["submit"])) {
 
     try {// preparer la requete
         $request = $db->prepare("SELECT * FROM users WHERE email = ?");
+
         // executer la requete
         $request->execute(array($email));
+
          // recuperer le resultat de la requete qui est toujours un objet
         $userInfo = $request->fetch(PDO::FETCH_ASSOC);
 
         if (empty($userInfo)) {
             //definir la variable de session role
-
             echo "Utilisateur inconnu";
         } else {
             if (password_verify($password, $userInfo["password"])) {
@@ -40,6 +41,7 @@ if (isset($_POST["submit"])) {
             }
         }
     } catch (PDOException $ex) {
+        
         // Assigner l'exception à $e
         $e = $ex;
     }
